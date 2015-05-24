@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dawoon LIM">
+
+		<link rel="shortcut icon" type="image/x-icon" href="img/tree.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="../../../../img/tree-128-128.png">
+    <title>Tree</title>
+
+    !-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../../../../css/lib/bootstrap-3.2.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../css/lib/bootstrap-theme-3.2.0.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../../../../css/tree_common.css" />
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      #search-form {
+        margin-top: 10px;
+      }
+      #nav-profile-image {
+        width: 35px;
+        height: 35px;
+
+      }
+      .size-35 {
+        width: 35px;
+        height: 35px;
+      }
+      .size-200{
+        width: 200px;
+      }
+    </style>
+
+  </head>
+
+  <body>
+    <!--navbar  -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="../../../../img/tree-128x128.png" class="logo">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="/">Home</a></li>
+            <li>
+              <!-- Search Bar -->
+              <form id="search-form" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form><!-- /Search Bar -->
+            </li>
+            <li>
+              <a href="/group">Make Group</a>
+            </li>
+          </ul>
+          
+          <!-- Setting DropDown Nav Menu -->
+          <ul class="nav navbar-nav navbar-right"> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span><%= my_u_name %></span>
+                  <span class="pull-right">
+                    <img class="img-responsive img-circle" src="<%= my_u_thumbnail %>" alt="profile image"/>
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/profile/<%= my_u_id %>">Profile</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/logout">Log out</a></li>
+                </ul>
+              </li>
+          </ul> 
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div><!-- /navbar -->
+    <br><br><br>
+    <div class="container">
+      <form class="form-profile" action="/profile/<%= my_u_id %>" onsubmit="return validateProfileInForm()" method="post">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Profile</h1>
+            <hr/>
+          </div>  
+        </div>
+        <div class="row">
+          <div class="col-md-2">
+            
+            <!-- <button type="button" class="btn btn-default btn-sm" data-toggle="modal" data-target="#myModal" >Sign in</button> or  -->
+            <!-- <img class="img-responsive" src="http://placehold.it/200x200"> -->
+            <img id="profile-image" class="img-responsive img-thumbnail size-200" src="<%= u_thumbnail %>" data-toggle="modal" data-target="#profilePhotoUploadModal" >
+            
+  
+          </div>
+          <div class="col-md-8">
+            <div class="form-group">
+              <label for="">Display name</label>
+              <input type="text" class="form-control" name="u_name" placeholder="user name" value="<%= u_name %>">
+            </div>
+            <div class="form-group">
+              <label for="InputEmail1">Email address</label>
+              <input type="email" class="form-control" id="InputEmail1" placeholder="Enter email" value="<%= u_email %>" disabled>
+            </div>
+            
+          </div> 
+        </div>
+        <div class="row">
+          <div class="col-md-10">
+            <br>
+            Personal 
+            <hr>
+          </div>
+        </div>  
+        <div class="row">
+        <div class="col-md-5">
+          <div class="form-group">
+            <label for="">Phone number</label>
+            <input type="text" class="form-control" name="u_hp" placeholder="Enter Phone number" value="<%= u_hp %>">
+          </div>
+          <div class="form-group">
+            <label for="">Birth day</label>
+            <input type="date" class="form-control" name="u_birth" value="<%= u_birth %>">
+
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="form-group">
+            <label for="">Desciption</label>
+            <textarea class="form-control" id="u_intro" rows="6"></textarea>
+          </div>
+        </div>
+        <div class="col-md-10">
+          <button class="btn btn-lg btn-primary btn-block" type="submit">update</button>
+        </div>
+      </div>
+      </form>
+    </div>     
+
+
+    <!-- profile photo upload modal  -->
+    <div class="modal fade" id="profilePhotoUploadModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h4 class="modal-title"><%= u_name %></h4>
+          </div>
+          <div class="modal-body">
+            <!-- <img class="img-responsive" src="http://placehold.it/200x200"> -->
+            <img id="profile-image-modal" class="img-responsive img-thumbnail size-200" src="<%= u_thumbnail %>" >
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default text-right" data-dismiss="modal">Close</button>
+            <form class="form-uploadImage" action="/profile/<%= my_u_id %>" onsubmit="return validateUpdateImageForm()" method="POST" enctype="multipart/form-data">
+              <div class="form-group">
+               <!-- <label for=""></label> -->
+              <input type="file" id="profile-image-file" name="pict" class="form-control"  onchange="readURL(this);">
+              </div>
+              <button type="submit" class="btn btn-primary"><span class="fa fa-upload"></span>Upload new image</button>
+            </form>    
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../../js/lib/jquery-1.11.1.min.js"></script>
+		<script src="../../../../js/lib/bootstrap-3.2.0.min.js"></script>
+    <script type="text/javascript">
+      function validateProfileInForm() {
+        return true;
+      }
+      
+      function validateUpdateImageForm() {
+        
+        if (!$("#profile-image-file").val()) {
+          //alert("select image file ");
+          return false;
+        }
+        return  true;
+      }
+
+      function readURL(input) {
+            if (input.files && input.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function (e) {
+                    $('#profile-image').attr('src', e.target.result);
+                    $('#profile-image-modal').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(input.files[0]);
+            }
+      }
+
+
+      
+    </script>
+  </body>
+</html>

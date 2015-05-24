@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dawoon LIM">
+
+		<link rel="shortcut icon" type="image/x-icon" href="/img/tree.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/tree-128-128.png">
+    <title>Tree</title>
+
+ 
+    
+ 
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../css/lib/bootstrap-3.2.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/lib/bootstrap-theme-3.2.0.min.css" />
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../css/tree_common.css" />
+    
+    <!-- for side menu & member profile (opensource - off canvas menu effects) -->
+    <!-- <link rel="stylesheet" type="text/css" href="../css/opensource/menu_topside.css" />
+    <link rel="stylesheet" type="text/css" href="../css/opensource/demo.css" />  -->
+   <link rel="stylesheet" type="text/css" href="../css/opensource/menu_sideslide.css" />
+    
+
+
+    <!-- Custom styles for this template -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../js/lib/html5shiv.js"></script>
+      <script src="../js/lib/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+    
+      /* 스크롤바 사라지게 하기.  */
+      .content-wrap, .menu-wrap, #profile_contents {
+        overflow:auto;
+      }
+      .dropdown {
+        z-index:3000;
+      }
+
+      #search-form {
+        margin-top: 10px;
+      }
+      #nav-profile-image {
+        width: 35px;
+        height: 35px;
+
+      }
+
+      .size-150 {
+        width: 150px;
+      }
+
+      .size-120 {
+        width: 120px;
+      }
+
+      .size-50 {
+        width: 50px;
+      }
+      .size-70 {
+        width: 70px;
+      }
+      .list li{
+        display: flex;
+        
+      }
+
+
+      .modalAnchor {
+        color:#fff;
+        background-color:rgba(0,0,0,0.35);
+        padding: 0px 10px 0px 10px;
+      }
+      
+      /* 그룹 설정 모달 화면 */
+      #myMemberInfoPageModal, #groupInfoPageModal {
+        color:#fff;
+        background-color:rgba(0,0,0,0.8);
+        padding: 0px 10px 0px 10px;
+      }
+     .modalAnchor #close_btn {
+        position:fixed;
+        top:-30px;
+        left:0;
+        font-size: 65px;
+          background-color: transparent;
+      }
+
+      .modalAnchor #send_btn{
+
+        text-align: right;
+        font-size: 25px;
+
+      }
+      .modalAnchor #profile_contents{
+        position:relative;
+        top:60px;
+        text-align: center;
+        font-size: 25px;
+        
+      }
+
+      .modalAnchor #profile_contents small{
+        position:relative;
+        font-size: 15px;
+        color: rgba(255,255,255,0.7);
+        
+      }
+    </style>
+       
+  </head>
+
+  <body>
+    <input type="hidden" id="my_u_id" value="<%= my_u_id %>">
+    <input type="hidden" id="g_id" value="<%= g_id %>">
+    <input type="hidden" id="data_group" value="<%= data_group %>">
+    <!-- navigation bar -->
+    
+    
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="../../img/tree-128x128.png" class="logo">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li>
+              <!-- Search Bar -->
+              <form id="search-form" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form><!-- /Search Bar -->
+            </li>
+            <li>
+              <a href="/group">Make Group</a>
+            </li>
+          </ul>
+         
+          <!-- Setting DropDown Nav Menu -->
+          <ul class="nav navbar-nav navbar-right"> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span><%= my_u_name %></span>
+                  <span class="pull-right">
+                    <img class="img-responsive img-circle" src="<%= my_u_thumbnail %>" alt="profile image"/>
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/profile/<%= my_u_id %>">Profile</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/logout">Log out</a></li>
+                </ul>
+              </li>
+          </ul> 
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    
+    <!-- navigation bar -->
+    
+    <br/><br/>
+    <div class="container">
+      <div class="menu-wrap">
+        <nav class="menu">
+          <div class="icon-list">
+            <!-- 
+            <div class="profile"><img src="img/user1.png" alt="Matthew Greenberg"/><span>Matthew Greenberg</span></div>
+            <a href="#"><i class="fa fa-fw fa-star-o"></i><span>Favorites</span></a>
+            <a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
+            <a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Messages</span></a>
+            <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
+            <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>
+            <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a>
+            <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a> 
+          -->
+
+          </div>
+        </nav>
+        <button class="close-button" id="close-button">Close Menu</button>
+      </div>
+      <div id="modal1" class="modalAnchor"></div>
+      <div id="modal" class="modalAnchor" ></div>
+      <!-- <button class="menu-button" id="open-button">Open Menu</button> -->
+      <div class="content-wrap">
+        <div class="content">
+
+
+
+          
+          <div id="holder"></div>
+
+
+
+        </div>
+      </div><!-- /content-wrap -->
+    </div><!-- /container -->
+    
+
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        </div>  
+      </div>
+    </div>   -->   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../js/lib/jquery-1.11.1.min.js"></script>
+		<script src="../js/lib/bootstrap-3.2.0.min.js"></script>
+    
+    <!-- for side menu & member profile (opensource - off canvas menu effects) -->
+    <!-- <script src="../../../../js/opensource/classie.js"></script> -->
+    <!-- // <script src="../../../../js/opensource/off_canvas_menu_effects.js"></script> -->
+    
+    <!-- for tree view -->
+    <script src="../js/opensource/raphael-min.js"></script>
+    <script src="../js/opensource/graffle.js"></script> 
+    
+    <script src="../js/tree/dw-group-datastructure.js"></script>
+    <script src="../js/group.js"></script>
+    <script type="text/javascript">
+
+    </script>
+  </body>
+</html>

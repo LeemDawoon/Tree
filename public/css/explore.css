@@ -1,0 +1,9 @@
+@CHARSET "UTF-8";
+.fixed {
+  position: fixed;
+  height:110%;
+}
+
+ul .row {
+  margin-top: 50px;
+}

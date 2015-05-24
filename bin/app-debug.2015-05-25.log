@@ -1,0 +1,559 @@
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:32.000Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:00:32.061Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:35.148Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:35.192Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:35.192Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:35.265Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:35.310Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:35.311Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:35.313Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:35.317Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:35.317Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:35.323Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:35.363Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:35.363Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:35.371Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:35.372Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:35.390Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:35.390Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:35.397Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:35.397Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:35.531Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:35.564Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:35.573Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:35.573Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:35.606Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:35.606Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:36.104Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:36.106Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:36.111Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:36.146Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:36.146Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:36.152Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:36.152Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:36.158Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:36.158Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:37.002Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:37.044Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:37.044Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:00:38.508Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:38.551Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:38.552Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:00:32.055Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:00:32.056Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:30.824Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:30.867Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:30.867Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:03:30.869Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.699Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.700Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.703Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.705Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.705Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:31.742Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:31.743Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:31.751Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:31.751Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:31.754Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:31.754Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:31.758Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:31.758Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:31.767Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:31.767Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.879Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:31.922Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:31.922Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.967Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.978Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:31.980Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:32.019Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:32.020Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:32.024Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:32.024Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:32.052Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:32.053Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:32.055Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:32.100Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:32.101Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:32.204Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:32.251Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:32.251Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:32.518Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:32.568Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:32.569Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:33.395Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:33.451Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:33.451Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:39.699Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:39.744Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:39.744Z"}
+{"level":"debug","message":"update member---- m_pos_name : Master Group Manager","timestamp":"2015-05-24T16:03:39.745Z"}
+{"level":"debug","message":"update member---- m_intro : 안녕하세요!!","timestamp":"2015-05-24T16:03:39.745Z"}
+{"level":"debug","message":"update member---- m_is_hp_open : true","timestamp":"2015-05-24T16:03:39.745Z"}
+{"level":"debug","message":"update member---- m_is_birth_open : true","timestamp":"2015-05-24T16:03:39.745Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:48.767Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:48.808Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:48.808Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:50.558Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:50.598Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:50.598Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:03:50.599Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.472Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.473Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.474Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.475Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.476Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.477Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.516Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.517Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.520Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.521Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.524Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.524Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.527Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.527Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.531Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.531Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.536Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.536Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.739Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.774Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.776Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.788Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.790Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.794Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:51.795Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.818Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.818Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.823Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.824Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.837Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.837Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:51.844Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:51.845Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:52.117Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:52.168Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:52.169Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:03:52.919Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:03:52.965Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:03:52.965Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:04:00.199Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:04:00.248Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:04:00.248Z"}
+{"level":"debug","message":"update member---- m_pos_name : Master Group Manager","timestamp":"2015-05-24T16:04:00.249Z"}
+{"level":"debug","message":"update member---- m_intro : 안녕하세요!!","timestamp":"2015-05-24T16:04:00.249Z"}
+{"level":"debug","message":"update member---- m_is_hp_open : undefined","timestamp":"2015-05-24T16:04:00.249Z"}
+{"level":"debug","message":"update member---- m_is_birth_open : undefined","timestamp":"2015-05-24T16:04:00.249Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:05:54.113Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:05:54.167Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:05:54.168Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:03.413Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:03.458Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:03.459Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:06:03.461Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.317Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.362Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.362Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.405Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.453Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.454Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.480Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.496Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.501Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.503Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.525Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.525Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.541Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.542Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.548Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.549Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.573Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.574Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.583Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.627Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.627Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.692Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.735Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.735Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.737Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.761Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:04.770Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.780Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.781Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.805Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.805Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:04.815Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:04.815Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:05.194Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:05.238Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:05.239Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:06:11.656Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:06:11.698Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:06:11.698Z"}
+{"level":"debug","message":"update member---- m_pos_name : Master Group Manager","timestamp":"2015-05-24T16:06:11.699Z"}
+{"level":"debug","message":"update member---- m_intro : 안녕하세요!!","timestamp":"2015-05-24T16:06:11.699Z"}
+{"level":"debug","message":"update member---- m_is_hp_open : 1","timestamp":"2015-05-24T16:06:11.699Z"}
+{"level":"debug","message":"update member---- m_is_birth_open : 0","timestamp":"2015-05-24T16:06:11.699Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:08:11.566Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:05.609Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:05.657Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:05.658Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:11:05.662Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:06.713Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:06.769Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:06.770Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:06.809Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:06.857Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:06.857Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:06.913Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:06.932Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:06.950Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:06.956Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:06.956Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:06.979Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:06.979Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:07.000Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:07.001Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:07.057Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:07.102Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:07.103Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:07.104Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:07.105Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:07.147Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:07.147Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:07.152Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:07.152Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:07.172Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:07.181Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:07.198Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:07.220Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:07.221Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:07.228Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:07.229Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:07.241Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:07.241Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:07.538Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:07.585Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:07.586Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:08.029Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:08.072Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:08.072Z"}
+{"level":"debug","message":"logged in ========================>homeLoggedIn","timestamp":"2015-05-24T16:11:08.074Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:30.785Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:30.828Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:30.828Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:11:31.078Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:11:31.121Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:11:31.121Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:11:31.122Z"}
+{"level":"error","message":"[getGroup] - getGroupDataSql ==> 검색된 Group 정보가 없습니다.","timestamp":"2015-05-24T16:11:31.205Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:19.594Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:19.636Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:19.636Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:13:19.637Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.379Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.393Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.397Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.422Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.422Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.423Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.425Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.436Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.436Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.442Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.442Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.465Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.465Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.470Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.470Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.554Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.597Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.599Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.683Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.686Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.689Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.690Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:20.691Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.727Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.735Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.738Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.739Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.744Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.744Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.747Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.747Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:20.753Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:20.753Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:21.128Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:21.186Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:21.186Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:31.714Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:31.754Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:31.754Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:31.977Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:32.038Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:32.038Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:13:32.040Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:32.791Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:32.793Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:32.795Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:32.814Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:32.818Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:32.833Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:32.833Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:32.838Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:32.838Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:32.842Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:32.842Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:32.854Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:32.854Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:32.860Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:32.860Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:32.915Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:32.971Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:32.972Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:33.048Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:33.050Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:33.057Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:33.058Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:33.067Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:33.089Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:33.090Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:33.095Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:33.096Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:33.103Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:33.103Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:33.107Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:33.108Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:33.114Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:33.115Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:33.399Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:33.444Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:33.444Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:13:37.819Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:13:37.861Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:13:37.861Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:08.222Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:08.264Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:08.265Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:08.467Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:08.507Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:08.507Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:14:08.508Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.264Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.269Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.270Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.271Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.272Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.273Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.311Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.311Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.319Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.320Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.325Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.325Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.331Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.331Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.335Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.336Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.344Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.344Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.531Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.537Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.539Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.542Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.552Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.578Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.579Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.585Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.586Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.597Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.598Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.610Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.610Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.615Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.616Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:09.904Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:09.954Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:09.954Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:13.507Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:13.551Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:13.551Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:34.818Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:34.862Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:34.863Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:35.067Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:35.109Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:35.109Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:14:35.110Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:35.785Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:35.791Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:35.797Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:35.798Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:35.805Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:35.807Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:35.828Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:35.828Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:35.834Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:35.834Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:35.841Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:35.842Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:35.847Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:35.847Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:35.854Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:35.858Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:35.865Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:35.865Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:36.033Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:36.041Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:36.047Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:36.049Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:36.067Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:36.092Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:36.092Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:36.097Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:36.097Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:36.101Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:36.101Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:36.104Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:36.104Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:36.113Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:36.113Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:36.416Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:36.461Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:36.461Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:14:37.985Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:14:38.027Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:14:38.027Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:56.236Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:56.281Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:56.282Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:16:56.284Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.195Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.196Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.196Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.197Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.198Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.199Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.247Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.248Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.280Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.280Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.284Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.284Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.297Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.298Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.304Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.304Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.325Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.327Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.544Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.569Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.601Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.601Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.602Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.605Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:57.606Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.643Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.643Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.649Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.650Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.654Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.655Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:57.687Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:57.687Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:58.032Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:58.105Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:58.106Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:16:58.869Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:16:58.910Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:16:58.910Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:10.745Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:10.789Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:10.789Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:10.999Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:11.041Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:11.041Z"}
+{"level":"debug","message":"req.isAuthenticated() ====> true","timestamp":"2015-05-24T16:17:11.042Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.684Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.688Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.689Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.691Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.692Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.696Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:11.734Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:11.735Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:11.738Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:11.738Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:11.741Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:11.741Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:11.745Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:11.745Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:11.749Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:11.749Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:11.755Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:11.755Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.944Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:11.987Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:11.987Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.988Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.995Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:11.997Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:12.001Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:12.030Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:12.030Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:12.037Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:12.037Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:12.041Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:12.042Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:12.047Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:12.047Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:12.313Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:12.377Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:12.389Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:17:13.977Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:17:14.020Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:17:14.020Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:25.966Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:26.017Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:26.019Z"}
+{"level":"debug","message":"logged in ========================>homeLoggedIn","timestamp":"2015-05-24T16:23:26.023Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:26.535Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:26.594Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:26.594Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:27.044Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:27.090Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:27.091Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:27.130Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:27.171Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:27.172Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:27.217Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:27.223Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:27.227Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:27.230Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:27.263Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:27.264Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:27.275Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:27.275Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:27.283Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:27.284Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:27.291Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:27.291Z"}
+{"level":"debug","message":"u_id : 10","timestamp":"2015-05-24T16:23:32.375Z"}
+{"level":"debug","message":"rows===================> : [object Object]","timestamp":"2015-05-24T16:23:32.416Z"}
+{"u_id":10,"u_email":"qwer1","u_name":"qwer1","u_hp":"010-1111-1111","u_birth":"2015-04-30T15:00:00.000Z","u_fb_link":null,"u_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/profile/upload_46ca4e4bcf5ba6524b590ff3cef85792.png","u_fb_token":null,"u_fb_id":null,"level":"debug","message":"local passport.deserializeUser()","timestamp":"2015-05-24T16:23:32.416Z"}
+{"level":"debug","message":"logged out ========================>homeLoggedOut","timestamp":"2015-05-24T16:23:32.505Z"}
+{"level":"debug","message":"explore=============================>","timestamp":"2015-05-24T16:23:34.501Z"}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","index":0,"level":"error","message":"[explore] - getExploreForestList ==>","timestamp":"2015-05-24T16:23:34.684Z"}
+{"level":"debug","message":"explore=============================>","timestamp":"2015-05-24T16:25:28.538Z"}
+{"g_id":21,"g_name":"Group1","g_intro":"We Are Group1","g_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/forest/upload_35b5ec11b72175abac7c1e78dd109e35.jpg","g_count":6,"level":"debug","message":"[explore] - getExploreForestList ==>","timestamp":"2015-05-24T16:25:28.719Z"}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","index":0,"level":"error","message":"[explore] - getExploreForestList ==>","timestamp":"2015-05-24T16:25:28.784Z"}
+{"level":"debug","message":"explore=============================>","timestamp":"2015-05-24T16:26:21.434Z"}
+{"g_id":21,"g_name":"Group1","g_intro":"We Are Group1","g_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/forest/upload_35b5ec11b72175abac7c1e78dd109e35.jpg","g_count":6,"level":"debug","message":"[explore] - getExploreForestList ==>","timestamp":"2015-05-24T16:26:21.516Z"}
+{"code":"ER_BAD_FIELD_ERROR","errno":1054,"sqlState":"42S22","index":0,"level":"error","message":"[explore] - getExploreForestList ==>","timestamp":"2015-05-24T16:26:21.557Z"}
+{"level":"debug","message":"explore=============================>","timestamp":"2015-05-24T16:27:02.432Z"}
+{"g_id":21,"g_name":"Group1","g_intro":"We Are Group1","g_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/forest/upload_35b5ec11b72175abac7c1e78dd109e35.jpg","g_count":6,"level":"debug","message":"[explore] - getExploreForestList ==>","timestamp":"2015-05-24T16:27:02.608Z"}
+{"level":"debug","message":"explore=============================>","timestamp":"2015-05-24T16:31:45.229Z"}
+{"g_id":21,"g_name":"Group1","g_intro":"We Are Group1","g_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/forest/upload_35b5ec11b72175abac7c1e78dd109e35.jpg","g_count":6,"level":"debug","message":"[explore] - getExploreGroupList ==>","timestamp":"2015-05-24T16:31:45.420Z"}
+{"level":"debug","message":"explore=============================>","timestamp":"2015-05-24T16:32:18.621Z"}
+{"g_id":21,"g_name":"Group1","g_intro":"We Are Group1","g_thumbnail":"https://s3-ap-northeast-1.amazonaws.com/treetree/image/forest/upload_35b5ec11b72175abac7c1e78dd109e35.jpg","g_count":6,"level":"debug","message":"[explore] - getExploreGroupList ==>","timestamp":"2015-05-24T16:32:18.707Z"}

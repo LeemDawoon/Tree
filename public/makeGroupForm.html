@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dawoon LIM">
+
+    <link rel="shortcut icon" type="image/x-icon" href="./img/tree.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/tree-128x128.png">
+    <title>Tree</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./css/lib/bootstrap-3.2.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/lib/bootstrap-theme-3.2.0.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
+    
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="./css/tree_common.css" />
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./js/lib/html5shiv.js"></script>
+      <script src="./js/lib/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+/*      * {
+          outline : 1px solid red !important;
+      }
+*/
+
+/*       #search-form {
+        margin-top: 10px;
+      }
+      #profile-image {
+        width: 35px;
+        height: 35px;
+
+      } */
+      .size-150 {
+        width: 150px;
+      }
+      .list li{
+        display: flex;
+        
+      }
+
+
+    </style>
+
+  </head>
+
+  <body>
+    <!-- navigation bar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="./img/tree-128x128.png" class="logo">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li>
+              <!-- Search Bar -->
+              <form id="search-form" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form><!-- /Search Bar -->
+            </li>
+            <li class="active">
+              <a href="/group">Make Group</a>
+            </li>
+          </ul>
+         
+          <!-- Setting DropDown Nav Menu -->
+          <ul class="nav navbar-nav navbar-right"> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span><%= my_u_name %></span>
+                  <span class="pull-right">
+                    <img id="profile-image" class="img-responsive img-circle" src="<%= my_u_thumbnail %>" alt="profile image"/>
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/profile/<%= my_u_id %>">Profile</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/logout">Log out</a></li>
+                </ul>
+              </li>
+          </ul> 
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    
+    <br><br><br>
+    
+    <!-- make a group contents -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Make Group</h1>
+          <hr/>
+        </div>  
+      </div>
+      <div class="row">
+        <div class="col-md-2 col-xs-12">
+          <img id="group-image" class="img-responsive img-thumbnail size-150" src="/img/tree-128x128.png">
+        </div>
+        
+        <div class="col-md-8 col-xs-12">
+          <form class="form-makeGroup" action="/group" onsubmit="return validateMakeGroupForm()" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="group-image-file">Select Group Cover Image file</label>
+              <input type="file" id="group-image-file" name="pict" class="form-control"  onchange="readURL(this);">
+            </div>
+            <div class="form-group">
+              <label for="group-name" >Group Name</label> 
+              <!-- <span id="group-name-check-label" class=" alert-danger text-right">this name is already used</span> -->
+              <input type="text" id="group-name" name="g_name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="group-description">Group Description</label>
+              <input type="text" id="group-description" name="g_intro" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary pull-right"><span class="fa fa-upload"></span> Make</button>
+          </form>
+          <hr>
+        </div>
+
+      </div>  <!-- end of row -->
+    </div>     
+
+
+
+
+    
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./js/lib/jquery-1.11.1.min.js"></script>
+    <script src="./js/lib/bootstrap-3.2.0.min.js"></script>
+     <script type="text/javascript">
+      function validateMakeGroupForm() {
+        if (!$("#group-name").val()) {
+          alert("enter your name of group");
+          return false;
+        } else if (!$("#group-description").val()) {
+          alert("enter your description of group");
+          return false;
+        } else if ($("#group-name").attr("class") === "form-control alert alert-danger") {
+          alert("your group's name is already used");
+          return false;
+        }
+        return true;
+      }
+
+      function readURL(input) {
+        if (input.files && input.files[0]) {
+          var reader = new FileReader();
+          reader.onload = function (e) {
+            $('#group-image').attr('src', e.target.result);
+          }
+          reader.readAsDataURL(input.files[0]);
+        }
+      }
+
+
+
+      function checkGroupNameDuplication(){
+        var g_name = $(this).val();
+        var checkGroupNameURL = "/group/check/nameDuplication?g_name="+g_name;
+        // var checkGroupNameDuplicationTimeout = setTimeout(function() {
+        //   alert("failed to get check group name");
+        // }, 8000);
+       
+        $.ajax({
+          url : checkGroupNameURL,
+          dataType : 'json',
+          // jsonp : "callback",
+          success : function (data) {
+            if (data.is_ok) {
+              // $('#group-name');
+              return $('#group-name').removeClass("alert alert-danger").addClass("alert alert-success");
+            } else {
+              // $('#group-name');
+              return $('#group-name').removeClass("alert alert-success").addClass("alert alert-danger");
+            }
+            // clearTimeout(checkGroupNameDuplicationTimeout);
+          }
+        });
+
+      }
+
+      $('#group-name').change(checkGroupNameDuplication);
+      
+
+
+
+    </script>
+  </body>
+</html>

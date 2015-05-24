@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dawoon LIM">
+
+		<link rel="shortcut icon" type="image/x-icon" href="/img/tree.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/img/tree-128-128.png">
+    <title>Tree</title>
+
+    <!-- Bootstrap CSS -->
+   <!--  <link rel="stylesheet" type="text/css" href="css/bootstrap-3.2.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-theme-3.2.0.min.css" /> -->
+
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
+    <!-- for side menu & member profile (opensource - off canvas menu effects) -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../../../css/opensource/menu_topside.css" /> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../../../../css/opensource/demo.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../../../../css/opensource/menu_sideslide.css" />
+    
+
+
+    <!-- Custom styles for this template -->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+      * {
+          outline : 1px solid red !important;
+      }
+
+
+      #search-form {
+        margin-top: 10px;
+      }
+      #nav-profile-image {
+        width: 35px;
+        height: 35px;
+
+      }
+
+      .size-150 {
+        width: 150px;
+      }
+
+      .size-120 {
+        width: 120px;
+      }
+
+      .size-60 {
+        width: 60px;
+      }
+      .list li{
+        display: flex;
+        
+      }
+
+
+      #modal {
+        color:#fff;
+        background-color:rgba(0,0,0,0.35);
+        padding: 0px 10px 0px 10px;
+      }
+      #modal #close_btn{
+        position:fixed;
+        top:-30px;
+        left:0;
+        font-size: 65px;
+          background-color: transparent;
+      }
+
+      #modal #send_btn{
+
+        text-align: right;
+        font-size: 25px;
+
+      }
+      #modal #profile_contents{
+        position:relative;
+        top:60px;
+        text-align: center;
+        font-size: 25px;
+        
+      }
+
+      #modal #profile_contents small{
+        position:relative;
+        font-size: 15px;
+        color: rgba(255,255,255,0.7);
+        
+      }
+    </style>
+       
+  </head>
+
+  <body>
+    <input type="hidden" id="f_id" value="<%= f_id %>">
+    <!-- navigation bar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">Tree</a>
+          <ul class="nav navbar-nav ">
+            <li> 
+              <a><span id="f_name"> </span></a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-collapse collapse">
+          <!-- Setting DropDown Nav Menu -->
+          <ul class="nav navbar-nav navbar-right"> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span class="glyphicon glyphicon-cog"></span> <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/profile/<%= my_t_id %>">Profile</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/logout">Log out</a></li>
+                </ul>
+              </li>
+          </ul> 
+          <!-- Profile image -->
+          <form class="navbar-form navbar-right">
+            <div class="form-group">
+              <img id="nav-profile-image" calss="img-responsive img-thumbnail" src="<%= my_t_thumbnail %>" alt="profile image"/>
+            </div>
+          </form>
+
+          <ul class="nav navbar-nav navbar-right">
+            <!-- <li><a href="/">Home</a></li> -->
+            <li>
+              <!-- Search Bar -->
+              <form id="search-form" class="navbar-form navbar-left" role="search">
+                <div class="form-group input-group-sm">
+                  <input type="text" class="form-control " placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default btn-sm">Submit</button>
+              </form>
+            </li>
+            <li>
+              <a href="/forest">Make Forest</a>
+            </li>
+          </ul>
+         
+
+          
+          
+        <!-- <div class="navbar-header">
+            <ul class="nav navbar-nav ">
+              <li> 
+                <a><span id="f_name"> </span></a>
+              </li>
+            </ul>
+        </div> -->
+        </div><!--/.navbar-collapse -->
+      </div> <!-- end of container -->
+    </div> <!-- end of navbar --> 
+    <br>
+    <br>
+      
+    <!-- profile contents -->
+
+    <!-- <div id="holder"></div> -->
+
+ 
+    <div class="container">
+      <div class="menu-wrap">
+        <nav class="menu">
+          <div class="icon-list">
+            <!-- 
+            <div class="profile"><img src="img/user1.png" alt="Matthew Greenberg"/><span>Matthew Greenberg</span></div>
+            <a href="#"><i class="fa fa-fw fa-star-o"></i><span>Favorites</span></a>
+            <a href="#"><i class="fa fa-fw fa-bell-o"></i><span>Alerts</span></a>
+            <a href="#"><i class="fa fa-fw fa-envelope-o"></i><span>Messages</span></a>
+            <a href="#"><i class="fa fa-fw fa-comment-o"></i><span>Comments</span></a>
+            <a href="#"><i class="fa fa-fw fa-bar-chart-o"></i><span>Analytics</span></a>
+            <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a>
+            <a href="#"><i class="fa fa-fw fa-newspaper-o"></i><span>Reading List</span></a> 
+          -->
+
+          </div>
+        </nav>
+        <button class="close-button" id="close-button">Close Menu</button>
+      </div>
+      <div id="modal"></div>
+      <!-- <button class="menu-button" id="open-button">Open Menu</button> -->
+      <div class="content-wrap">
+        <div class="content">
+
+
+
+          
+          <div id="holder"></div>
+
+
+
+        </div>
+      </div><!-- /content-wrap -->
+    </div><!-- /container -->
+    
+
+
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+        </div>  
+      </div>
+    </div>   -->   
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../../../js/jquery-1.11.1.min.js"></script>
+		<script src="../../../../js/bootstrap-3.2.0.min.js"></script>
+    
+    <!-- for side menu & member profile (opensource - off canvas menu effects) -->
+    <!-- <script src="../../../../js/opensource/classie.js"></script> -->
+    <!-- // <script src="../../../../js/opensource/off_canvas_menu_effects.js"></script> -->
+    
+    <!-- for tree view -->
+    <script src="../../../../js/opensource/raphael-min.js"></script>
+    <script src="../../../../js/opensource/graffle.js"></script> 
+    
+    <script src="../../../../js/tree/dw-forest-datastructure.js"></script>
+    <script type="text/javascript">
+
+
+      var setForestListHTML = function (forestsData) {
+        var forestlistElem = $('#forest-list');
+
+        for(var i=0; i<forestsData.length; i++) {
+          var result ='<li class="list-item"><div class="container"><div class="row"><div class="col-md-2"><div class="item-cover"><img class="tree-img img-responsive size-120" src="'+
+                   forestsData[i].f_thumbnail+'"></div></div><div class="col-md-10"><div class="item-header"><h4>'+ 
+                   // 'http://placehold.it/120x120'+'"></div></div><div class="col-md-10"><div class="item-header"><h4>'+ 
+                   
+                   forestsData[i].f_name +'</h4><h5><span class="fa fa-users"></span>'+
+                   forestsData[i].f_count +'</h5></div><div class="item-body"><p>'+
+                   forestsData[i].f_intro +'</div><div class="item-footer"></div></div></div><hr></div></li> ';
+
+          forestlistElem.append(result);
+        }
+          
+      }
+
+
+      // var forestsDataCacheMemory=[];
+
+      // load profile data
+      function loadForestDetailData() {
+        // profile AJAX request goes here
+        alert("localStorage: "+localStorage.t_id);
+        var f_id = $('#f_id').val();
+        var getForestDetailDataUrl = '/forest/'+f_id;
+
+        // var requestTimeout = setTimeout(function() {
+        //     // $wikiElem.text("failed to get wikipedia resources");
+        // }, 8000);
+      
+        $.ajax({
+            url : getForestDetailDataUrl,
+            dataType : 'json',
+            // jsonp : "callback",
+            success : function (data) {
+
+
+                // graffieTest();
+              var forest = new Forest(data);
+              
+              $('#f_name').html(forest.f_name+' <small><span class="fa fa-users">'+forest.f_count+'</small> <span>');
+
+              forest.buildingTreeSmallgroup();
+              forest.drawSmallgroups();
+              thisPageCache.forest = forest;
+
+              forest.drawForest();
+            }
+        });
+        // return false
+      };
+      
+      window.onload=loadForestDetailData();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+@CHARSET "UTF-8";
+/* navigation bar의 로고. */
+.navbar-brand .logo {
+  height:50px;
+  width:50px;
+  margin-top:-15px;
+}
+
+/* navigation bar 의 썸네일. */
+.nav img {
+  height:40px;
+  width:40px;
+  margin-top:-10px;
+  margin-left:10px;
+  
+}
+
+/*  썸네일 크기 옵션. */
+.size-150 {
+  width: 150px;
+}
+
+.size-120 {
+  width: 120px;
+}

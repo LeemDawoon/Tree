@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dawoon LIM">
+
+		<link rel="shortcut icon" type="image/x-icon" href="/img/tree.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./img/tree-128x128.png">
+    <title>Tree</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap-3.2.0.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/lib/bootstrap-theme-3.2.0.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../../css/tree_common.css" />
+    <link rel="stylesheet" type="text/css" href="../../css/profile.css" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./js/lib/html5shiv.js"></script>
+      <script src="./js/lib/respond.min.js"></script>
+    <![endif]-->
+
+    <style type="text/css">
+/*       * {
+          outline : 1px solid red !important;
+      }
+ */
+ 
+       /* .size-150 {
+        width: 150px;
+      }
+
+      .size-120 {
+        width: 120px;
+      }
+      .list li{
+        display: flex;
+        
+      }
+ */
+
+    </style>
+
+  </head>
+
+  <body>
+    <input type="hidden" id="u_id" value="<%= u_id %>">
+    <input type="hidden" id="my_u_id" value="<%= my_u_id %>">
+    <input type="hidden" id="data_group_list" value="<%= group_list %>">
+    <!-- navigation bar -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="../../img/tree-128x128.png" class="logo">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li>
+              <!-- Search Bar -->
+              <form id="search-form" class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form><!-- /Search Bar -->
+            </li>
+            <li>
+              <a href="/group">Make Group</a>
+            </li>
+          </ul>
+         
+          <!-- Setting DropDown Nav Menu -->
+          <ul class="nav navbar-nav navbar-right"> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span><%= my_u_name %></span>
+                  <span class="pull-right">
+                    <img class="img-responsive img-circle" src="<%= my_u_thumbnail %>" alt="profile image"/>
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/profile/<%= my_u_id %>">Profile</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/logout">Log out</a></li>
+                </ul>
+              </li>
+          </ul> 
+
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+    <br><br><br>
+    
+    <!-- profile contents -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 col-xs-12">
+          <!-- <div class="panel panel-default fixed">
+            <div class="panel-body" id="profile-section">
+              <img id="profile-image" src="<%= u_thumbnail %>" class="img-responsive img-thumbnail size-150">
+              <h3 id="profile-name"><%= u_name %></h3>
+              <h5 id="profile-email"><%= u_email %></h5>
+              <hr>
+            </div>
+          </div> -->
+          
+          <div class="fixed" id="profile-section">
+            <br/>
+            <img id="profile-image" src="<%= u_thumbnail %>" class="img-responsive img-thumbnail size-150">
+            <h3 id="profile-name"><%= u_name %></h3>
+            <h5 id="profile-email"><%= u_email %></h5>
+            <hr>
+          </div> 
+        </div>
+        <div class="col-md-8 col-xs-12">
+        
+         <ul id="group_list" class="list-unstyled">
+            <!-- group list item  -->
+            <!-- <li class="row">
+              <div class="col-xs-4 col-md-2 ">
+                <img src="../../img/tree-128x128.png" class="img-responsive">
+              </div>
+              <div class="col-xs-8 col-md-10 ">
+                <h3>group<small><p class="text-right"><i class="fa fa-users"></i> 12</p></small></h3>
+                <small>hello this group is sample</small>
+              </div>
+            </li> --><!-- group list item  -->
+            
+            
+          </ul>
+          <!-- <ul class="list list-unstyled" id="group-list"> -->
+            <!-- item  model-->
+            <!-- <li class="list-item">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-2">
+                    <div class="item-cover">
+                      <img class="tree-img img-responsive " src="http://placehold.it/120x120">
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="item-header">
+                      <h3>tree name</h3>
+                      <h5><span class="fa fa-users"></span> 12 </h5>
+                    </div>
+                    <div class="item-body">
+                      <p>abcd egfe age aslkskldhteiehl lsishelieiflkdsislislkehslsiekdkllkshslskdadfasdfasdfasdfasdfafi sadfasdfasdfasdfasdfaflkseidk l</p>
+                    </div>
+                    <div class="item-footer">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr>
+            </li> -->
+
+          <!-- </ul> -->          
+        </div> 
+        <div class="col-md-2 col-xs-12">
+        </div>  
+      </div>
+    </div>     
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="../../js/lib/jquery-1.11.1.min.js"></script>
+		<script src="../../js/lib/bootstrap-3.2.0.min.js"></script>
+    <script src="../../js/profile.js"></script>
+    <script type="text/javascript">
+
+
+           
+
+
+    </script>
+  </body>
+</html>
