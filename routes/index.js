@@ -27,6 +27,7 @@ var home = function(req, res, next) {
     res.render('homeLoggedOut') ;
   } else {
     global.logger.debug("logged in ========================>homeLoggedIn");
+//    res.redirect('/profile/'+req.user.u_id);
     res.render('homeLoggedIn',{
       my_u_name: req.user.u_name,
       my_u_thumbnail:req.user.u_thumbnail,

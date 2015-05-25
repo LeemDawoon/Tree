@@ -53,42 +53,49 @@ var getProfile = function(req, res, next) {
 					 * Column :  u_email (이메일)
 					 * SQL 설명 : 프로필 정보 주인의 가입된 Forest 정보를 가져온다.*/
 					var getForestsDataSql = 
-					"SELECT distinct g.g_id, g.g_name, g.g_intro, g.g_thumbnail, "+ 
-					  "( SELECT count(distinct mm.u_id) "+
-					  "FROM member mm JOIN small_group sgsg JOIN "+ 
-					  "ggroup gg ON (mm.sg_id = sgsg.sg_id AND gg.g_id=sgsg.g_id) "+
-					  "WHERE gg.g_id=g.g_id "+
-					  ") g_count  "+
-					"FROM  member m JOIN small_group sg JOIN ggroup g ON (m.sg_id = sg.sg_id AND g.g_id=sg.g_id) "+ 
-					"WHERE   m.u_id= ? "+
-					"ORDER BY g_count DESC ";
+					  "SELECT g.g_id, g.g_name, g.g_intro, g.g_thumbnail, "+ 
+					  "( SELECT count(mm.m_id) "+
+					  "FROM member mm JOIN ggroup gg ON (mm.g_id = gg.g_id) "+ 
+					  "WHERE gg.g_id=g.g_id AND mm.m_isapproved=1 "+
+					  ") g_count "+
+					  "FROM  member m JOIN ggroup g ON (m.g_id = g.g_id) "+ 
+					  "WHERE m.u_id= ? AND m.m_isapproved=1 "+
+					  "ORDER BY g_name ";
 					
 				    connection.query(getForestsDataSql, [u_id], function(err, rows, fields){
 				    	if (err) {
-				    		global.logger.error("[getProfile] - getTreeDataSql ==>",err);
+				    		global.logger.error("[getProfile] - getForestsDataSql ==>",err);
 	        				return callback(err);
 				    	} 
-				    	
 				    	result.group_list = rows;
 				    	callback(null,result);
-				    	/*
-						{
-							u_thumbnail : ,
-							u_name : ,
-							u_email : ,
-							groups : [
-								{
-								  g_id : ,
-									g_thumbnail : ,
-									g_name : ,
-									g_intro : ,
-									g_count	:		
-								}, 
-							]
-						}
-						*/
 				    });
-				}],
+				},
+				function getJoiningGroupData(result,  callback) {
+          /* Table : user(사용자 정보 테이블), smallgroup(소그룹 정보 테이블), group(숲 정보 테이블)
+           * Column :  u_email (이메일)
+           * SQL 설명 : 가입 요청 중인 Group 정보를 가져온다.*/
+          var getJoiningGroupDataSQL = 
+          
+          "SELECT g_name, g_intro, g_thumbnail, " +
+          "( SELECT count(mm.m_id) " +
+          "FROM member mm JOIN ggroup gg ON (mm.g_id = gg.g_id) " +
+          "WHERE gg.g_id=g.g_id AND mm.m_isapproved=1 " +
+          ") g_count " +
+          "FROM member m JOIN ggroup g ON (m.g_id = g.g_id) " +
+          "WHERE m.u_id=? AND m.m_isapproved=0 " +
+          "ORDER BY g_name";
+          
+            connection.query(getJoiningGroupDataSQL, [u_id], function(err, rows, fields){
+              if (err) {
+                global.logger.error("[getProfile] - getJoiningGroupDataSQL ==>",err);
+                  return callback(err);
+              } 
+              
+              result.joining_group_list = rows;
+              callback(null,result);
+            });
+        }],
 				function (err, result) {
 					connection.release();
       		if (err) {
@@ -96,6 +103,7 @@ var getProfile = function(req, res, next) {
       			return next(err);
       		}
       	
+      		
           res.render('profile',{
             my_u_id:req.user.u_id,
             my_u_name: req.user.u_name,
@@ -104,7 +112,8 @@ var getProfile = function(req, res, next) {
             u_thumbnail : result.u_thumbnail,
             u_name : result.u_name,
             u_email : result.u_email,
-            group_list : JSON.stringify(result.group_list), 
+            group_list : JSON.stringify(result.group_list),
+            joining_group_list : JSON.stringify(result.joining_group_list)
           });
       		
 				}

@@ -26,7 +26,7 @@ var explore = function (req, res, next) {
           /* Table : member(소그룹 소속 멤버 정보.), small_group(소그룹 정보.), group(그룹 정보.)
            * Column :  g_id(숲 아이디.), g_name(숲 이름.), g_intro(숲 소개.), g_thumbnail(숲 커버 이미지.), g_count(숲 가입 멤버수.) 
            * SQL 설명 : 숲가입 멤버수로 정렬된, 그룹 리스트를 보여준다.*/
-          var getExploreGroupListSQL =  "SELECT g.g_id, g.g_name, g.g_intro, g.g_thumbnail, count(distinct m.u_id) g_count " +
+          var getExploreGroupListSQL =  "SELECT g.g_id, g.g_name, g.g_intro, g.g_thumbnail, count(distinct m.u_id) g_count, g_master_manager_m_id " +
                                       "FROM member m JOIN small_group sg JOIN ggroup g ON (m.sg_id = sg.sg_id AND g.g_id=sg.g_id) " +
                                       "GROUP BY g.g_id " +
                                       "ORDER BY g_count desc " +

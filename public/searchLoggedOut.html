@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css" href="./css/lib/bootstrap-3.2.0.min.css" />
 		<link rel="stylesheet" type="text/css" href="./css/lib/bootstrap-theme-3.2.0.min.css" />
 
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
 
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="./css/tree_common.css" />
@@ -28,8 +28,7 @@
   </head>
 
   <body>
-    <input type="hidden" id= "data_group_list" value="<%= group_list %>"/>
-    <input type="hidden" id= "data_group_list_count" value="<%= group_list_count %>"/>
+    <input type="hidden" id= "search_result" value="<%= search_result %>"/>
     <!--navbar  -->
     <div class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -90,7 +89,7 @@
         <!-- group list -->
         <div class="col-xs-12 col-md-8">
           <br/><br/>
-          <ul id="group_list" class="list-unstyled">
+          <ul id="search_list" class="list-unstyled">
             <!-- group list item  -->
             <!-- <li class="row">
               <div class="col-xs-4 col-md-2 ">
@@ -130,7 +129,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="./js/lib/jquery-1.11.1.min.js"></script>
 		<script src="./js/lib/bootstrap-3.2.0.min.js"></script>
-    <script src="./js/explore.js"></script>
+    <script src="./js/searchLoggedOut.js"></script>
     <script type="text/javascript">
     function validateSearchForm() {
       var keyword = $('#keyword').val();
@@ -138,9 +137,7 @@
         return false;
       }
       return true;
-    }
-    
-   
+    }   
 
     </script>
   </body>

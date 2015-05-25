@@ -58,7 +58,6 @@ var closebtn = document.getElementById( 'close-button' );
 var content = document.querySelector( '.content-wrap' );
 var isOpen = false;
 var holder = document.querySelector( '#holder' );
-var modal1El = $("#modal1");
 var modalEl = $("#modal");
 
 var thisPageCache={};
@@ -160,9 +159,9 @@ var drawSmallgroups = function(){
 
   for (var smallgroupIndex=0, len=smallgroups.length; smallgroupIndex<len; smallgroupIndex++) {
     var smallgroup = smallgroups[smallgroupIndex];
-    if(!smallgroup.sg_thumbnail){
-      smallgroup.sg_thumbnail = "/img/sg_img.jpg";
-    }
+//    if(!smallgroup.sg_thumbnail){
+//      smallgroup.sg_thumbnail = "/img/sg_img.jpg";
+//    }
     var thumbImg = r.image( smallgroup.sg_thumbnail, 
                             smallgroup.x, 
                             smallgroup.y,
@@ -356,24 +355,24 @@ function openGroupInfoPage() {
     "<div id='profile_contents'> " ;
   if (myMember.m_is_g_master_manager==1) {
     text +=
-      "<img id='group-image' class='img-circle size-70' src='"+ group.g_thumbnail +"'/> "+
+      "<img id='group-image' class='img-circle size-70' src='"+ group.g_thumbnail +"'/>" +
+      "<p class='text-right'><i class='fa fa-users'></i> : " + group.g_count+"</p>"+
       "<form class='form-makeGroup' action='/group/"+ group.g_id+ "' onsubmit='return validateGroupForm()' method='post' enctype='multipart/form-data'>" +
         "<div class='form-group'>" +
-          "<label for='group-image-file'><small>Select Group Cover Image file</small></label>" +
+          "<p class='text-left'><small>Select Group Cover Image file</small></p>" +
           "<input type='file' id='group-image-file' name='pict' class='form-control'  onchange='readURL(this);'>" +
         "</div>" +
         "<div class='form-group'>" +
-          "<label for='group-name' ><small>Group Name</small></label>" +
+          "<small><p class='text-left'>Group Name</p></small>" +
           "<input type='text' id='group-name' name='g_name' class='form-control' value='"+group.g_name+"'>" +
         "</div>" +
-        "<br/><i class='fa fa-users'></i> : " + group.g_count +"" +
         "<div class='form-group'>" +
-          "<label for='group-description'><small>Group Description</small></label>" +
+          "<p class='text-left'><small>Group Description</small></p>" +
           "<input type='text' id='group-description' name='g_intro' class='form-control' value='"+group.g_intro+"'>" +
         "</div>" +
         "<button type='submit' class='btn btn-warning pull-right'><span class='fa fa-upload'></span> 그룹 수정 </button>" +
         "<a class='btn btn-danger pull-right' href=''>삭제 </a>" +
-      "</form>" ;
+      "</form>";
   } else {
     text +=
       "<img id='group-image' class='img-circle size-70 ' src='"+ group.g_thumbnail +"'/> "+ group.g_name +
@@ -384,11 +383,16 @@ function openGroupInfoPage() {
         "<br/><small><i class='fa fa-comment'></i> : \" "+group.g_intro+" \"</small>";
     }
   }
+  
+  
+  
   text+="</div>" + "</div>";
   
   modalEl.html(text);
   $('#groupInfoPageModal').modal('show');
 }
+
+
 
 function openMyMemberInfoPage() {
   var myMember = thisPageCache.myMember;
@@ -471,20 +475,21 @@ var drawGroup = function () {
 //      stroke: "none",
 //    }).click(openMyPageAtGroup).touchend(openMyPageAtGroup);
 //  }
-  
   if (myMember.m_is_g_manager == 1) {
-    
-  }
-  
-  if (myMember.m_is_sg_manager == 1 ) {
     r.path("M21.053,20.8c-1.132-0.453-1.584-1.698-1.584-1.698s-0.51,0.282-0.51-0.51s0.51,0.51,1.02-2.548c0,0,1.414-0.397,1.132-3.68h-0.34c0,0,0.849-3.51,0-4.699c-0.85-1.189-1.189-1.981-3.058-2.548s-1.188-0.454-2.547-0.396c-1.359,0.057-2.492,0.792-2.492,1.188c0,0-0.849,0.057-1.188,0.397c-0.34,0.34-0.906,1.924-0.906,2.321s0.283,3.058,0.566,3.624l-0.337,0.113c-0.283,3.283,1.132,3.68,1.132,3.68c0.509,3.058,1.019,1.756,1.019,2.548s-0.51,0.51-0.51,0.51s-0.452,1.245-1.584,1.698c-1.132,0.452-7.416,2.886-7.927,3.396c-0.511,0.511-0.453,2.888-0.453,2.888h26.947c0,0,0.059-2.377-0.452-2.888C28.469,23.686,22.185,21.252,21.053,20.8zM8.583,20.628c-0.099-0.18-0.148-0.31-0.148-0.31s-0.432,0.239-0.432-0.432s0.432,0.432,0.864-2.159c0,0,1.199-0.336,0.959-3.119H9.538c0,0,0.143-0.591,0.237-1.334c-0.004-0.308,0.006-0.636,0.037-0.996l0.038-0.426c-0.021-0.492-0.107-0.939-0.312-1.226C8.818,9.619,8.53,8.947,6.947,8.467c-1.583-0.48-1.008-0.385-2.159-0.336C3.636,8.179,2.676,8.802,2.676,9.139c0,0-0.72,0.048-1.008,0.336c-0.271,0.271-0.705,1.462-0.757,1.885v0.281c0.047,0.653,0.258,2.449,0.469,2.872l-0.286,0.096c-0.239,2.783,0.959,3.119,0.959,3.119c0.432,2.591,0.864,1.488,0.864,2.159s-0.432,0.432-0.432,0.432s-0.383,1.057-1.343,1.439c-0.061,0.024-0.139,0.056-0.232,0.092v5.234h0.575c-0.029-1.278,0.077-2.927,0.746-3.594C2.587,23.135,3.754,22.551,8.583,20.628zM30.913,11.572c-0.04-0.378-0.127-0.715-0.292-0.946c-0.719-1.008-1.008-1.679-2.59-2.159c-1.584-0.48-1.008-0.385-2.16-0.336C24.72,8.179,23.76,8.802,23.76,9.139c0,0-0.719,0.048-1.008,0.336c-0.271,0.272-0.709,1.472-0.758,1.891h0.033l0.08,0.913c0.02,0.231,0.022,0.436,0.027,0.645c0.09,0.666,0.21,1.35,0.33,1.589l-0.286,0.096c-0.239,2.783,0.96,3.119,0.96,3.119c0.432,2.591,0.863,1.488,0.863,2.159s-0.432,0.432-0.432,0.432s-0.053,0.142-0.163,0.338c4.77,1.9,5.927,2.48,6.279,2.834c0.67,0.667,0.775,2.315,0.746,3.594h0.48v-5.306c-0.016-0.006-0.038-0.015-0.052-0.021c-0.959-0.383-1.343-1.439-1.343-1.439s-0.433,0.239-0.433-0.432s0.433,0.432,0.864-2.159c0,0,0.804-0.229,0.963-1.841v-1.227c-0.001-0.018-0.001-0.033-0.003-0.051h-0.289c0,0,0.215-0.89,0.292-1.861V11.572z"
     ).translate(
         dw_common.screenWidth-100,
         20
     ).attr({
       fill:"#000",
-      strock:"none"
-    });
+      strock:"none",
+      href:"/group/"+thisPageCache.group.g_id+"/manage"
+    })
+//    hrefstringclick(openGroupManagePage).touchend(openGroupManagePage);
+  }
+  
+  if (myMember.m_is_sg_manager == 1 ) {
+    
   }
   
   
@@ -528,6 +533,11 @@ var buildingTreeSmallgroup = function() {
       }
     }
     smallgroupNode.x = dw_common.screenWidth/(sameDepthNodesCount)*(currentNodeIndex + 0.5)-dw_common.thumbnailSize60/2;
+    
+    if(!smallgroupNode.sg_thumbnail){
+      smallgroupNode.sg_thumbnail = "/img/sg_img.jpg";
+    }
+    
     this.smallgroups[index] = smallgroupNode;
   }
 
@@ -560,6 +570,7 @@ function Group(group) {
   this.g_intro = group.g_intro; 
   this.g_count = group.g_count; 
   
+  this.join_request_members = group.join_request_members;
   
   this.smallgroups = group.smallgroups;
   

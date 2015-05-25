@@ -56,7 +56,7 @@ $( document ).ready(function () {
   group.drawSmallgroups();
   thisPageCache.group = group;
   
-  var my_u_id = localStorage.getItem('u_id');
+  var my_u_id = $('#my_u_id').val();
   var smallgroups = group.smallgroups
   for (var i=0, lengthOfSmallgroups = smallgroups.length; i<lengthOfSmallgroups; i++) {
     for (var j=0, lengthOfMembers=smallgroups[i].members.length; j<lengthOfMembers; j++) {

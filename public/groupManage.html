@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="Dawoon LIM">
+
+		<link rel="shortcut icon" type="image/x-icon" href="./img/tree.ico">
+		<link rel="apple-touch-icon-precomposed" sizes="72x72" href="./../../../img/tree-128x128.png">
+    <title>Tree</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" type="text/css" href="./../../css/lib/bootstrap-3.2.0.min.css" />
+		<link rel="stylesheet" type="text/css" href="./../../css/lib/bootstrap-theme-3.2.0.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" />
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="../../../../css/tree_common.css" />
+    <link rel="stylesheet" type="text/css" href="./../../css/explore.css" />
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="./js/lib/html5shiv.js"></script>
+      <script src="./js/lib/respond.min.js"></script>
+    <![endif]-->
+   
+   <style type="text/css">
+    .size-70 {
+        width: 70px;
+    
+      }
+    .size-60 {
+      width: 60px;
+  
+    }
+    
+      .modal {
+        color:#fff;
+        background-color:rgba(0,0,0,0.8);
+        padding: 0px 50px 0px 50px;
+      }
+      
+     .modalAnchor #close_btn {
+        position:fixed;
+        top:-30px;
+        left:0;
+        font-size: 65px;
+          background-color: transparent;
+      }
+
+      .modalAnchor #send_btn{
+
+        text-align: right;
+        font-size: 25px;
+
+      }
+      .modalAnchor #profile_contents{
+        position:relative;
+        top:60px;
+        /* text-align: center; */
+        font-size: 25px;
+        
+      }
+
+      .modalAnchor #profile_contents small{
+        position:relative;
+        font-size: 15px;
+        color: rgba(255,255,255,0.7);
+        
+      }
+      
+   </style>
+  </head>
+  <body>
+    <input type="hidden" id="g_id" value="<%= g_id %>">
+    <input type="hidden" id="my_u_id" value="<%= my_u_id %>">
+    <input type="hidden" id="data_group" value="<%= data_group %>">
+    <!--navbar  -->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img src="./../../img/tree-128x128.png" class="logo">
+          </a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li>
+              <!-- Search Bar -->
+              <form id="search-form" class="navbar-form navbar-left" action="/search" onsubmit="return validateSearchForm()" method='get'>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="keyword" name="keyword" placeholder="Search">
+                    <span class="input-group-btn">
+                      <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                    </span>
+                  </div>
+                </div>
+              </form><!-- /Search Bar -->
+            </li>
+            <li>
+              <a href="/group">Make Group</a>
+            </li>
+          </ul>
+          
+          
+          <!-- Setting DropDown Nav Menu -->
+          <ul class="nav navbar-nav navbar-right"> 
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  <span><%= my_u_name %></span>
+                  <span class="pull-right">
+                    <img class="img-responsive img-circle" src="<%= my_u_thumbnail %>" alt="profile image"/>
+                  </span>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a href="/profile/<%= my_u_id %>">Profile</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  <li class="divider"></li>
+                  <li><a href="/logout">Log out</a></li>
+                </ul>
+              </li>
+          </ul> 
+           
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div><!-- /navbar -->
+    
+    
+    <div id="modal" class="modalAnchor" ></div>
+    
+    <div class="container">
+      <div id="content">
+        
+        
+        
+      </div>
+      <hr>
+      <footer>
+        <p>&copy; Company 2015</p>
+      </footer>
+    </div> <!-- /container -->
+
+    
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./../../js/lib/jquery-1.11.1.min.js"></script>
+		<script src="./../../js/lib/bootstrap-3.2.0.min.js"></script>
+    <script src="./../../js/groupManage.js"></script>
+    <script type="text/javascript">
+    function validateSearchForm() {
+      var keyword = $('#keyword').val();
+      if (!keyword) {
+        return false;
+      }
+      return true;
+    }   
+
+    </script>
+  </body>
+</html>

@@ -190,7 +190,7 @@ var getGroup = function (req, res, next) {
               "select g_id, g_name, g_thumbnail, g_intro, "+
               "(  SELECT count(distinct mm.u_id) "+ 
               "FROM member mm JOIN small_group sgsg JOIN ggroup gg ON (mm.sg_id = sgsg.sg_id AND gg.g_id=sgsg.g_id) "+ 
-              "WHERE gg.g_id=? "+ 
+              "WHERE gg.g_id=? AND mm.m_isapproved=1 "+ 
               ") g_count "+ 
               "from ggroup where g_id=?";
             connection.query(getGroupDataSql, [g_id, g_id], function(err, rows, fields){
@@ -258,7 +258,7 @@ var getGroup = function (req, res, next) {
                    * SQL 설명: 특정 숲의 특정 소그룸의 멤버 정보
                    **/
                       
-                      var membershipDataSql = 
+                      var memberDataSQL = 
                         "SELECT m_id, m_pos_name, m_intro, m_is_sg_manager, m_is_g_manager, m_is_g_master_manager, u.u_id, u_thumbnail, u_name, u_email, "+ 
                         "(CASE m_is_hp_open WHEN 1 THEN u_hp ELSE null END) u_hp, "+
                         "(CASE m_is_birth_open WHEN 1 THEN u_birth ELSE null END) u_birth, "+ 
@@ -266,7 +266,7 @@ var getGroup = function (req, res, next) {
                         "FROM user u JOIN member m ON(u.u_id = m.u_id)  "+
                         "WHERE m_isapproved=1 AND sg_id=? " +
                         "ORDER BY m_is_g_master_manager DESC, m_is_g_manager DESC, m_is_sg_manager DESC , u_name ASC ";
-                      connection.query(membershipDataSql, [smallgroup.sg_id], function(err, rows, fields){
+                      connection.query(memberDataSQL, [smallgroup.sg_id], function(err, rows, fields){
                         if (err) {
                             global.logger.error("[getGroup] - membershipDataSql ==>", err);
                             err.message = "Membership 정보요청 중 오류가 발생하였습니다.";
@@ -446,6 +446,163 @@ var updateGroup = function (req, res, next) {
   }// end of if
 };
 
+var getGroupManage = function (req, res, next) {
+  var g_id = req.params.g_id;
+  process.nextTick(function() {
+    global.connectionPool.getConnection(function(err, connection){
+      if (err) {
+        global.logger.error("[getGroupManage] - connectionPool ==>",err);
+        err.message = "Group 정보요청 중 오류가 발생하였습니다.";
+        return next(err);
+      }
+      async.waterfall([
+        function getGroupData(callback) {
+          /* Table : group(Group 정보 테이블)
+             * Column :  g_name (숲이름)
+             * SQL 설명 : 숲 식별자에 해당하는 정보 가져 오기*/
+          var getGroupDataSql = 
+            "select g_id, g_name, g_thumbnail, g_intro, "+
+            "(  SELECT count(distinct mm.u_id) "+ 
+            "FROM member mm JOIN small_group sgsg JOIN ggroup gg ON (mm.sg_id = sgsg.sg_id AND gg.g_id=sgsg.g_id) "+ 
+            "WHERE gg.g_id=? AND mm.m_isapproved=1 "+ 
+            ") g_count "+ 
+            "from ggroup where g_id=?";
+          connection.query(getGroupDataSql, [g_id, g_id], function(err, rows, fields){
+            if (err) {
+                global.logger.error("[getGroupManage] - getGroupDataSql ==>", err);
+                err.message = "Group 정보요청 중 오류가 발생하였습니다.";
+                callback(err);
+            } else {
+              if (!rows.length) {
+                err={};
+                global.logger.error("[getGroupManage] - getGroupDataSql ==>", "검색된 Group 정보가 없습니다.");
+                err.message="검색된 Group 정보가 없습니다.";
+                callback(err);
+              } else {
+                callback(null, rows[0]);  
+              }
+            }
+          });// end of query
+        },
+        function getSmallGroupAndMemberData (groupData, callback) {
+          var smallgroups=[];
+          /* Table : smallgroup,  membership,  tree,
+           * Column :   
+                  sg_id:,
+                  sg_depth:,
+                  sg_name:,
+                  sg_master_manager_m_id,
+                  sg_parent_sg_id:,
+                  sg_first_child_sg_id:,
+                  sg_next_sbling_sg_id:,
+
+           * SQL 설명: 특정 숲의 소그룹 정보
+           **/
+          var getSmallgroupDataSql = 
+            "SELECT sg_id, sg_depth, sg_name, sg_intro, sg_thumbnail, sg_parent_sg_id, sg_first_child_sg_id, sg_next_sibling_sg_id "+
+            "FROM small_group "+ 
+            "WHERE g_id=? "+
+            "ORDER BY sg_depth, sg_name";
+          connection.query(getSmallgroupDataSql, [g_id], function(err, rows, fields){
+            if (err) {
+                global.logger.error("[getGroup] - getSmallgroupDataSql ==>", err);
+                err.message = "Group 정보요청 중 오류가 발생하였습니다.";
+                callback(err);
+            } else {
+              if (!rows) {
+                err={};
+                global.logger.error("[getGroup] - getSmallgroupDataSql ==>", "검색된 smallgroup 정보가 없습니다.");
+                err.message="검색된 smallgroup 정보가 없습니다.";
+                callback(err);
+              } else {
+                async.each(rows, function(smallgroup, innerCallback){
+                  /* Table : smallgroup,  membership,  tree,
+                   * Column : 
+                        m_id:,
+                        m_pos_name:,
+                        m_intro:,
+                        u_id:,
+                        u_thumbnail:,
+                        u_name:,
+                        u_email:,
+                        u_hp:,    //m_is_hp_open
+                        u_birth:  //m_is_birth_open
+                        u_fb_link:  //m_is_fblink_open 에 따라서 
+                   * SQL 설명: 특정 숲의 특정 소그룸의 멤버 정보
+                   **/
+                      
+                  var memberDataSQL = 
+                    "SELECT m_id, m_pos_name, m_intro, m_is_sg_manager, m_is_g_manager, m_is_g_master_manager, u.u_id, u_thumbnail, u_name, u_email, "+ 
+                    "(CASE m_is_hp_open WHEN 1 THEN u_hp ELSE null END) u_hp, "+
+                    "(CASE m_is_birth_open WHEN 1 THEN u_birth ELSE null END) u_birth, "+ 
+                    "(CASE m_is_fblink_open WHEN 1 THEN CONCAT('http://www.facebook.com/',u_fb_id) ELSE null END) u_fb_link "+ 
+                    "FROM user u JOIN member m ON(u.u_id = m.u_id)  "+
+                    "WHERE sg_id=? AND m_is_sg_manager=1 ";
+                  connection.query(memberDataSQL, [smallgroup.sg_id], function(err, rows, fields){
+                    if (err) {
+                      global.logger.error("[getGroup] - membershipDataSql ==>", err);
+                      err.message = "Membership 정보요청 중 오류가 발생하였습니다.";
+                      innerCallback(err);
+                    } else {
+                      smallgroup.members = rows;
+                      smallgroups.push(smallgroup);
+                      innerCallback();  
+                    }
+                  });// end of query                  
+                }, 
+                function(err){
+                  if (err) {
+                    callback(err);
+                  } else {
+                    groupData.smallgroups = smallgroups;
+                    callback(null, groupData); 
+                  }
+                }); // end of async.each
+              } // end of if-else
+            }// end of if-else
+          });// end of query  
+        },
+        function getJoinRequestMemberData(groupData,callback) {
+          /* Table : group(Group 정보 테이블)
+           * Column :  g_name (숲이름)
+           * SQL 설명 : 숲 식별자에 해당하는 정보 가져 오기*/
+          var getJoinRequestMemberDataSQL = 
+            "SELECT m_id, u_thumbnail, u_name, u_email "+
+            "FROM member m JOIN user u ON(m.u_id=u.u_id) "+
+            "WHERE g_id=? AND m_isapproved=0 ";
+          connection.query(getJoinRequestMemberDataSQL, [ g_id ], function(err, rows, fields){
+            if (err) {
+              global.logger.error("[getGroup] - getJoinRequestMemberDataSQL ==>", err);
+              err.message = "Group 정보요청 중 오류가 발생하였습니다.";
+              callback(err);
+            } else {
+              if (!rows.length) {
+                callback(null,groupData);
+              } else {
+                groupData.join_request_members = rows
+                callback(null, groupData);  
+              }
+            }
+          });// end of query
+        }],
+        function(err, result){
+          connection.release();
+          if (err) {
+            next(err);
+          } else {
+            res.render('groupManage', 
+                {
+                  'my_u_id': req.user.u_id,
+                  'my_u_name' : req.user.u_name,
+                  'my_u_thumbnail': req.user.u_thumbnail,
+                  'g_id':g_id,
+                  'data_group': JSON.stringify(result)
+                });
+          }
+        });// end of async
+      });
+  });// end of process.nextTick
+}
 
 /* Get Make a Group Form */
 /* Make a Group */
@@ -457,5 +614,6 @@ router.route('/check/nameDuplication').get(checkNameDuplication);
 /* Get Group */
 router.route('/:g_id').get(global.common.isLoggedIn, getGroup).post(global.common.isLoggedIn, updateGroup);
 
+router.route('/:g_id/manage').get(global.common.isLoggedIn, getGroupManage)
 module.exports = router;
 
