@@ -305,10 +305,26 @@ function openGroupManagePage() {
 
 function validateMakeSmallGrouprPage() {
   var sg_id = $('input:radio[name="sg_id"]:checked').val();
+  var sg_depth = $("#sg_depth"+sg_id).val(); 
+  alert(sg_depth);
   if(!sg_id) {
     alert("소그룹을 선택해 주세요!");
     return false;
   }
+  
+  if (!$("#small-group-name").val()) {
+    alert("enter your name of small group");
+    return false;
+  } 
+
+  if (!$("#small-group-description").val()) {
+    alert("enter your description of small group");
+    return false;
+  } 
+  
+  $("#sg_depth").val(sg_depth);
+  alert($("#sg_depth").val());
+  
   return true;
 }
 
@@ -317,16 +333,16 @@ function openMakeSmallGrouprPage() {
   var group = thisPageCache.group;
   var smallgroups = group.smallgroups;
   var myMember = thisPageCache.myMember;
-  var joinRequestMember = group.join_request_members[joinRequestMemberIndex];
   var htmlText = 
-    "<div class='modal fade'  id='acceptJoinRequestMemberPageModal'  tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'> " +
+    "<div class='modal fade'  id='makeakeSmallGrouprPageModal'  tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'> " +
       "<span class='btn btn-sm' id='close_btn' data-dismiss='modal' aria-hidden='true'>×</span> " +
       "<div id='profile_contents' class='row'> " +
-        "<form action='/smallgGroup?g_id"+ group.g_id+ "' onsubmit='return validateMakeSmallGrouprPage()' method='post' >" +
+        "<form action='/smallgroup?g_id="+ group.g_id+ "' onsubmit='return validateMakeSmallGrouprPage()' method='post' enctype='multipart/form-data'>" +
+          "<input type='hidden' id='sg_depth' name='sg_depth'>" +
+          "<input type='hidden' name='g_id' value='"+group.g_id+"'>" +
           "<div class='col-md-6 col-xs-12'>" +
             "<ul class='list-unstyled'>" +
-              "<li><h4><p class='text-left'>부모 소그룹을 선택하세요!</p></h4><hr/></li>" +
-                "<input type='hidden' name='g_id' value='"+group.g_id+"'>";
+              "<li><h4><p class='text-left'>부모 소그룹을 선택하세요!</p></h4><hr/></li>" ;
   
     for (var i=0, len=smallgroups.length; i<len; i++) {
       htmlText+=
@@ -339,23 +355,37 @@ function openMakeSmallGrouprPage() {
                   "<small>"+smallgroups[i].sg_intro+"</small>"+
                 "</div>" +
                 "<div class='col-xs-4 col-md-3 '>" +
-                  "<input type='radio' name='sg_id' value='"+smallgroups[i].sg_id+"' aria-label='...'>" +
+                  "<input type='hidden' id='sg_depth"+smallgroups[i].sg_id+"' value='"+smallgroups[i].sg_depth+"'>" +
+                  "<input type='radio' name='sg_id' value='"+smallgroups[i].sg_id+"' required>" +
                 "</div>" +
               "</li>";
     }
 
     htmlText+=
-              "<button type='submit' class='btn btn-warning pull-right'><span class='fa fa-upload'></span> + 소그룹 생상하기 </button>" +
+              
             "</ul>" +
           "</div>" +
           "<div class='col-md-6 col-xs-12'>" +
-          "</div>" +
-          "" ;
+            "<img id='small-group-image' class='img-responsive img-thumbnail size-70' src='/img/tree-128x128.png'>"+
+            "<div class='form-group'>" +
+              "<h4>Select Small Group Cover Image file</h4>" +
+              "<input type='file' id='small-group-image-file' name='pict' class='form-control'  onchange='readURL(this);'>" +
+            "</div>" +
+            "<div class='form-group'>" +
+              "<h4>Small Group Name</h4>" +
+              "<input type='text' id='small-group-name' name='sg_name' class='form-control' required>" +
+            "</div>" +
+            "<div class='form-group'>" +
+              "<h4>Small Group Description</h4>" +
+              "<input type='text' id='small-group-description' name='sg_intro' class='form-control' required>" +
+            "</div>" +
+            "<button type='submit' class='btn btn-primary pull-right'><span class='fa fa-upload'></span> + 소그룹 생성하기 </button>" +
+          "</div>";
    
     htmlText+="</form>"+"</div>" + "</div>";
     
     modalEl.html(htmlText);
-    $('#acceptJoinRequestMemberPageModal').modal('show');
+    $('#makeakeSmallGrouprPageModal').modal('show');
     
 }
 function validateAcceptJoinRequestMemberPage () {
@@ -628,27 +658,24 @@ function MemberNode(member){
 }
 
 
-/* group 정보 수정할 때 씌임. */
-function validateGroupForm() {
+/* small group 정보 수정할 때 씌임. */
+function validateSmallGroupForm() {
   if (!$("#group-name").val()) {
-    alert("enter your name of group");
+    alert("enter your name of small group");
     return false;
   } else if (!$("#group-description").val()) {
-    alert("enter your description of group");
+    alert("enter your description of small group");
     return false;
-  } else if ($("#group-name").attr("class") === "form-control alert alert-danger") {
-    alert("your group's name is already used");
-    return false;
-  }
+  } 
   return true;
 }
 
-/* group 정보 수정할 때, 사진 수정할 때 씌임. */
+/* small group 정보 수정할 때, 사진 수정할 때 씌임. */
 function readURL(input) {
   if (input.files && input.files[0]) {
     var reader = new FileReader();
     reader.onload = function (e) {
-      $('#group-image').attr('src', e.target.result);
+      $('#small-group-image').attr('src', e.target.result);
     }
     reader.readAsDataURL(input.files[0]);
   }
