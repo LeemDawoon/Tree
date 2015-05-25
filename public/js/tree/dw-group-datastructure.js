@@ -516,7 +516,7 @@ var buildingTreeSmallgroup = function() {
     
     //set y position 
     var groupDepth = smallgroups[smallgroupslength-1].sg_depth;
-    smallgroupNode.y= (dw_common.screenHeight)/(groupDepth+1)*smallgroupNode.sg_depth + dw_common.topNavigationBarHeight*2.5;
+    smallgroupNode.y= (dw_common.screenHeight-dw_common.topNavigationBarHeight-30)/(groupDepth+1)*smallgroupNode.sg_depth + dw_common.topNavigationBarHeight*1.5;
 
 
     //set x position
