@@ -7,7 +7,6 @@
   g_name
   g_thumbnail
   g_intro
-  g_master_manager_m_id
   g_count
   smallgroups : 
   [
@@ -27,6 +26,9 @@
           m_id:,
           m_pos_name:,
           m_intro:,
+          m_is_sg_manager:,
+          m_is_g_manager:,
+          m_is_g_master_manager:,
           u_id:,
           u_thumbnail:,
           u_name:,

@@ -8,31 +8,21 @@ var async = require('async');
 var path = require('path');
 
 
-// var treePath = require('../config/tree_path');
-// var serverHost = require('../config/server').serverHost;
-
-// var processS3UploadFiles = require('../lib/common').processS3UploadFiles;
-// var processS3DeleteFile  = require('../lib/common').processS3DeleteFile;
-
 
 /* GET home page. */
 var home = function(req, res, next) {
-
-  /*res.render('homeLoggedIn',{
-    my_t_thumbnail:req.user.t_thumbnail,
-    my_t_id:req.user.t_id
-  });*/
   if (!req.isAuthenticated()) {
-     global.logger.debug("logged out ========================>homeLoggedOut");
+    global.logger.debug("logged out ========================>homeLoggedOut");
     res.render('homeLoggedOut') ;
   } else {
     global.logger.debug("logged in ========================>homeLoggedIn");
 //    res.redirect('/profile/'+req.user.u_id);
     res.render('homeLoggedIn',{
+      my_u_id:req.user.u_id,
       my_u_name: req.user.u_name,
       my_u_thumbnail:req.user.u_thumbnail,
-      my_u_id:req.user.u_id
-    });
+    }) ;
+    
   }
  
 };
@@ -45,7 +35,7 @@ function authenticateLocalLogin(req, res, next) {
       return next(err);
     }
     if (!user) {
-      logger.debug("not logged in... ");
+      global.logger.debug("not logged in... ");
       // return next({ message : info });
       return res.redirect('/loginForm');
     }
@@ -53,7 +43,7 @@ function authenticateLocalLogin(req, res, next) {
       if (err) {
         return next(err);
       }
-      logger.debug("logged in... ");
+      global.logger.debug("logged in... ");
       next();
     });
   })(req, res, next);
@@ -66,7 +56,7 @@ function authenticateLocalSignup(req, res, next) {
       return next(err);
     }
     if (!user) {
-      logger.debug("not signed up... ");
+      global.logger.debug("not signed up... ");
       // return next({ message : info });
       return res.redirect('/loginForm');
     }
@@ -74,7 +64,7 @@ function authenticateLocalSignup(req, res, next) {
       if (err) {
         return next(err);
       }
-      logger.debug("signed up... ");
+      global.logger.debug("signed up... ");
       next();
     });
   })(req, res, next);
@@ -150,7 +140,6 @@ router.route('/signUp').post(authenticateLocalSignup, home);
 
 
 /* sign in with facebook */ 
-// router.route('/auth/facebook').get(authenticateFacebookLogin, home);
 router.get('/auth/facebook', passport.authenticate('facebook', { scope: ['email'] }));
 router.get('/auth/facebook/callback', passport.authenticate('facebook', { //facebook 에서 보내온 요청
   successRedirect: '/',
