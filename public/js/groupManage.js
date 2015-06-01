@@ -10,15 +10,18 @@ $( document ).ready(function () {
   thisPageCache.group = group;
   
   var my_u_id = $('#my_u_id').val();
-  var smallgroups = group.smallgroups
+  var smallgroups = group.smallgroups;
+  
   for (var i=0, lengthOfSmallgroups = smallgroups.length; i<lengthOfSmallgroups; i++) {
     for (var j=0, lengthOfMembers=smallgroups[i].members.length; j<lengthOfMembers; j++) {
+//      alert(j);
       if( smallgroups[i].members[j].u_id == my_u_id) {
         thisPageCache.myMember = smallgroups[i].members[j];
         break;
       }
     }
   }
+  
   group.drawGroupManage();
 });
 
@@ -82,231 +85,14 @@ var modalEl = $("#modal");
 
 
 var thisPageCache={};
-//var  r = Raphael("holder", dw_common.screenWidth, dw_common.screenHeight-dw_common.topNavigationBarHeight);
 
 
 
-
-function memberProfile (sInd, mInd) {
-
-  var smallgroupIndex = parseInt(sInd);
-  var memberIndex = parseInt(mInd);
-
-      modalEl.html(thisPageCache.group.smallgroups[smallgroupIndex].members[memberIndex].modal_contents);
-          // if(is_enable_request_btn){
-            // $("#send_span").html(" <span class=\"glyphicon glyphicon-send\" id=\"send_btn\"  onclick=\"send_request_to_tree_of_the_group('"+this.data("email")+"','"+this.data("g_email")+"','"+this.data("g_name")+"')\"></span>");
-            
-          // }
-      $('#profile_modal').modal('show');
-
-}
-
-// 변수에 저장해 놓고, "g_id" 에 해당하하는 값 없음. 아작스 요청하는 것도 좋겠군
-
-
-
-
-/* 설정 페이지. */
-function openMyPageAtGroup () {
- 
-  if (!window.localStorage ) {
-//           alert('당신의 브라우저는 HTML5 localStorage를 지원하지 않습니다. 브라우저를 업그레이드하세요.');
-    } else {
-          // localStorage.setItem("u_id",u_id);
-//                alert('당신의 브라우저는 HTML5 localStorage를 지원');
-//                alert(window.localStorage.u_id);
-//                alert(group.g_master_manager_m_id+" : "+group.my_m_id);
-    }
-
-  var myMember = thisPageCache.myMember;
-  var text = 
-    "<div class='modal fade'  id='myPageAtGroup_modal'  tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'> " +
-      "<span class='btn btn-sm' id='close_btn' data-dismiss='modal' aria-hidden='true'>×</span> " +
-      "<div id='profile_contents'> " +
-        "<div class='col-md-6 col-xs-12'>" +
-          "<ul class='list-unstyled'>" +
-            "<li><p class='text-left'><small>Group</small><hr/></p></li>" +
-            "<li class='row'>" +
-              "<div class='col-xs-4 col-md-2 '>" +
-                "<img class='img-rounded size-70 ' src='"+group.g_thumbnail+"'/> " +
-              "</div>" +
-              "<div class='col-xs-6 col-md-8 '>" +
-                "<h4>"+group.g_name+"</h4>" ;
-
-  if(group.g_intro) {
-    text+=      "<small>\" "+group.g_intro+" \"</small>";
-  }
-  text +=
-  
-              "</div>" +
-              "<div class='col-xs-2 col-md-2 '>";
-  if (myMember.m_is_g_master_manager==1) {
-    text +=     "<a class='btn btn-warning btn-sm' href=''>수정 </a>" +
-                "<a class='btn btn-danger btn-sm' href=''>삭제 </a>" ;
-  }
-              
-  text +=     "</div>" +
-            "</li>" + //end of row
-            "<li><br/><p class='text-left'><small>Small Group</small></p><hr/></li>" ;
- 
-//  var smallgroups = group.smallgroups
-  for (var i=0, length = smallgroups.length; i<length; i++) {
-    text+=  "<li class='row'>" +
-              "<div class='col-xs-4 col-md-2 '>" +
-                "<img class='img-rounded size-70 ' src='"+smallgroups[i].sg_thumbnail+"'/> " +
-              "</div>" +
-              "<div class='col-xs-6 col-md-8 '>" +
-                "<h4>"+smallgroups[i].sg_name+"</h4>" ;
-    if(smallgroups[i].sg_intro) {
-      text+=    "<small>\" "+smallgroups[i].sg_intro+" \"</small>";
-    }
-    
-    text+=
-              "</div>" +
-              "<div class='col-xs-2 col-md-2 '>" +
-                "<a class='btn btn-warning btn-sm' href=''>수정 </a>" +
-                "<a class='btn btn-danger btn-sm' href=''>삭제 </a>" +
-              "</div>" +
-            "</li>";
-    
-    text+=  "<li class='row'>" +
-              "<div class='col-xs-4 col-md-2 '>" +
-                "<img class='img-circle size-70 ' src='"+smallgroups[i].members[0].u_thumbnail+"'/> " +
-              "</div>" +
-              "<div class='col-xs-6 col-md-8 '>" +
-                "<h4>"+smallgroups[i].members[0].u_name+"</h4>" ;
-    if(smallgroups[i].sg_intro) {
-      text+=    "<small>\" "+smallgroups[i].members[0].sg_intro+" \"</small>";
-    }
-    
-    text+=
-              "</div>" +
-              "<div class='col-xs-2 col-md-2 '>" +
-                "<a class='btn btn-info btn-sm' href=''>권한변경 </a>" +
-              "</div>" +
-            "</li>";
-  }//end of for
-
-  text+=
-            "<li class='btn btn-default'>+ Make a New Small Group</li>"+
-            "<li><br/><p class='text-left'><small>My Member Info </small><hr/></p></li>" +
-            
-            "<li class='row'>" +
-              "<div class='col-xs-4 col-md-2 '>" +
-                "<img class='img-circle size-70 ' src='"+myMember.u_thumbnail+"'/> " +
-              "</div>" +
-              "<div class='col-xs-6 col-md-8 '>" +
-                "<h4>" + myMember.u_name+ "</h4>" +
-                "<small>"+myMember.u_pos_name+"</small><br/>" +
-                "<small>"+myMember.m_intro+"</small><br/>" +
-                "<i class='fa fa-phone'></i><br/>" +
-                "<i class='fa fa-birthday-cake'></i>" +
-              "</div>" +
-              "<div class='col-xs-2 col-md-2 '>" +
-                "<br/>" +
-                "<a class='btn btn-warning btn-sm' href=''>수정 </a>" +
-                "<a class='btn btn-warning btn-sm' href=''>수정 </a><br/>" +
-                "<input type='checkbox' aria-label='...'><br/>" +
-                "<input type='checkbox' aria-label='...'>" +
-              "</div>" +
-            "</li>" +
-          "</ul>"+
-        "</div>"+ //end of col
-        "<div class='col-md-6 col-xs-12'>" +
-          "<ul class='list-unstyled'>" +
-            "<li><p class='text-left'><small>가입 요청 리스트 </small><hr/></p></li>" +
-            "<li><p class='text-left'><small>초대 대기 리스트 </small><hr/></p></li>" +
-          "</ul>" +
-        "</div>" +
-      "</div>" +
-    "</div>";
-
-   modalEl.html(text);
-   $('#myPageAtGroup_modal').modal('show');
-
-//    $("#modal").html(thisPageCache.group.smallgroups[smallgroupIndex].members[memberIndex].modal_contents);
-//           if(is_enable_request_btn){
-//             $("#send_span").html(" <span class=\"glyphicon glyphicon-send\" id=\"send_btn\"  onclick=\"send_request_to_tree_of_the_group('"+this.data("email")+"','"+this.data("g_email")+"','"+this.data("g_name")+"')\"></span>");
-//            
-//           }
-//       $('#myPageAtGroup_modal').modal('show');
-
-}
-
-
-function openGroupManagePage() {
-//  var group = thisPageCache.group;
-//  var myMember = thisPageCache.myMember;
-//  var joinRequestMembers = group.join_request_members;
-//  var text = 
-//  "<div class='modal fade'  id='groupInfoPageModal'  tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'> " +
-//    "<span class='btn btn-sm' id='close_btn' data-dismiss='modal' aria-hidden='true'>×</span> " +
-//    "<div id='profile_contents' class='row'> " ;
-//  if (myMember.m_is_g_master_manager==1) {
-//    text +=
-//      "<div class='col-md-6 col-xs-12'>" +
-//        "<img id='group-image' class='img-circle size-70' src='"+ group.g_thumbnail +"'/>" +
-//        "<p class='text-right'><i class='fa fa-users'></i> : " + group.g_count+"</p>"+
-//        "<form class='form-makeGroup' action='/group/"+ group.g_id+ "' onsubmit='return validateGroupForm()' method='post' enctype='multipart/form-data'>" +
-//          "<div class='form-group'>" +
-//            "<p class='text-left'><small>Select Group Cover Image file</small></p>" +
-//            "<input type='file' id='group-image-file' name='pict' class='form-control'  onchange='readURL(this);'>" +
-//          "</div>" +
-//          "<div class='form-group'>" +
-//            "<small><p class='text-left'>Group Name</p></small>" +
-//            "<input type='text' id='group-name' name='g_name' class='form-control' value='"+group.g_name+"'>" +
-//          "</div>" +
-//          "<div class='form-group'>" +
-//            "<p class='text-left'><small>Group Description</small></p>" +
-//            "<input type='text' id='group-description' name='g_intro' class='form-control' value='"+group.g_intro+"'>" +
-//          "</div>" +
-//          "<button type='submit' class='btn btn-warning pull-right'><span class='fa fa-upload'></span> 그룹 수정 </button>" +
-//          "<a class='btn btn-danger pull-right' href=''>삭제 </a>" +
-//        "</form>" +
-//      "</div><br/>" +
-//      "<div class='col-md-6 col-xs-12'>" +
-//        "<ul class='list-unstyled'>" +
-//          "<br/><li><h4><p class='text-left'>그룹 가입 요청 멤버 리스트</p></h4><hr/></li>";
-//    for (var i=0, len=joinRequestMembers.length; i<len; i++) {
-//      text+=
-//          "<li class='row'>"+
-//            "<div class='col-xs-3 col-md-2 '>"+
-//              "<img src='"+joinRequestMembers[i].u_thumbnail+"' class='img-responsive img-circle'>"+
-//            "</div>"+
-//            "<div class='col-xs-5 col-md-7 '>"+
-//              "<h4>"+joinRequestMembers[i].u_name+"<small><p class='text-right'></p></small></h4>"+
-//              "<small>"+joinRequestMembers[i].u_email+"</small>"+
-//            "</div>" +
-//            "<div class='col-xs-4 col-md-3 '>" +
-//              "<a class='btn btn-danger pull-right' href=''>거절</a> " +
-//              "<a class='btn btn-success pull-right' href=''>수락</a> " +
-//            "</div>" +
-//          "</li>";
-//    }
-//    text+=
-//          "<br/><li><h4><p class='text-left'>그룹 초대 멤버 리스트</p></h4><hr/></li>" +
-//        "</ul>" +
-//      "</div>" ;
-//  } else {
-//    text +=
-//      "<img id='group-image' class='img-circle size-70 ' src='"+ group.g_thumbnail +"'/> "+ group.g_name +
-//      "<br/><small><i class='fa fa-users'></i> : " + group.g_count +" </small>";
-//    
-//    if(group.g_intro) {
-//      text+=      
-//        "<br/><small><i class='fa fa-comment'></i> : \" "+group.g_intro+" \"</small>";
-//    }
-//  }
-//  text+="</div>" + "</div>";
-//  
-//  modalEl.html(text);
-//  $('#groupInfoPageModal').modal('show');
-}
 
 function validateMakeSmallGrouprPage() {
   var sg_id = $('input:radio[name="sg_id"]:checked').val();
   var sg_depth = $("#sg_depth"+sg_id).val(); 
-  alert(sg_depth);
+  $("#sg_depth").val(sg_depth);
   if(!sg_id) {
     alert("소그룹을 선택해 주세요!");
     return false;
@@ -322,24 +108,21 @@ function validateMakeSmallGrouprPage() {
     return false;
   } 
   
-  $("#sg_depth").val(sg_depth);
-  alert($("#sg_depth").val());
   
   return true;
 }
 
 
-function openMakeSmallGrouprPage() {
+function openMakeSmallGroupPage() {
   var group = thisPageCache.group;
   var smallgroups = group.smallgroups;
   var myMember = thisPageCache.myMember;
   var htmlText = 
-    "<div class='modal fade'  id='makeakeSmallGrouprPageModal'  tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'> " +
+    "<div class='modal fade'  id='makeSmallGrouprPageModal'  tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'> " +
       "<span class='btn btn-sm' id='close_btn' data-dismiss='modal' aria-hidden='true'>×</span> " +
       "<div id='profile_contents' class='row'> " +
         "<form action='/smallgroup?g_id="+ group.g_id+ "' onsubmit='return validateMakeSmallGrouprPage()' method='post' enctype='multipart/form-data'>" +
           "<input type='hidden' id='sg_depth' name='sg_depth'>" +
-          "<input type='hidden' name='g_id' value='"+group.g_id+"'>" +
           "<div class='col-md-6 col-xs-12'>" +
             "<ul class='list-unstyled'>" +
               "<li><h4><p class='text-left'>부모 소그룹을 선택하세요!</p></h4><hr/></li>" ;
@@ -385,9 +168,136 @@ function openMakeSmallGrouprPage() {
     htmlText+="</form>"+"</div>" + "</div>";
     
     modalEl.html(htmlText);
-    $('#makeakeSmallGrouprPageModal').modal('show');
-    
+    $('#makeSmallGrouprPageModal').modal('show');
 }
+
+function validateUpdateSmallGrouprPage() {
+  var returnValue = confirm("소그룹 정보를 수정하시겠습니까? ");
+  if (returnValue) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+function validateUpdateSmallGrouprPageForParent() {
+  var returnValue = confirm("부모 소그룹 설정을 수정하시겠습니까? ");
+  if (returnValue) {
+    var sg_parent_sg_id = $('input:radio[name="sg_parent_sg_id"]:checked').val();
+    var sg_depth = $("#sg_depth"+sg_parent_sg_id).val(); 
+    $("#sg_depth").val(sg_depth);
+    alert(sg_depth);
+    return true;
+  } else {
+    return false;
+  }
+}
+function openUpdateSmallGroupPage(index) {
+  var group = thisPageCache.group;
+  var smallgroups = group.smallgroups;
+  var smallgroup = smallgroups[index];
+  var members=smallgroup.members;
+//  alert(members.length);
+  
+  var myMember = thisPageCache.myMember;
+  var htmlText = 
+    "<div class='modal fade'  id='openUpdateSmallGroupPageModal'  tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'> " +
+      "<span class='btn btn-sm' id='close_btn' data-dismiss='modal' aria-hidden='true'>×</span> " +
+      "<div id='profile_contents' class='row'> " +
+        "<input type='hidden' name='g_id' value='"+group.g_id+"'>" +
+        "<div class='col-md-6 col-xs-12'>" +
+          "<form action='/smallgroup/"+smallgroup.sg_id+"?g_id="+ group.g_id+ "' onsubmit='return validateUpdateSmallGrouprPage()' method='post' enctype='multipart/form-data'>"+ 
+            "<img id='small-group-image' class='img-responsive img-thumbnail size-70' src='"+smallgroup.sg_thumbnail+"'>"+
+            "<div class='form-group'>" +
+              "<h4>Select Small Group Cover Image file</h4>" +
+              "<input type='file' id='small-group-image-file' name='pict' class='form-control'  onchange='readURL(this);'>" +
+            "</div>" +
+            "<div class='form-group'>" +
+              "<h4>Small Group Name</h4>" +
+              "<input type='text' id='small-group-name' name='sg_name' class='form-control' value='"+smallgroup.sg_name+"' required>" +
+            "</div>" +
+            "<div class='form-group'>" +
+              "<h4>Small Group Description</h4>" +
+              "<input type='text' id='small-group-description' name='sg_intro' class='form-control' value='"+smallgroup.sg_intro+"' required>" +
+            "</div>" +
+            "<button type='submit' class='btn btn-primary pull-right'><span class='fa fa-upload'></span> + 소그룹 수정하기 </button>" +
+            "<br/><br/><h4><p class='text-left'>소그룹 관리자 권한 부여</p></h4><hr/>" +
+          "</form>" +
+          "<ul class='list-unstyled'>" ;
+      for (var i=0, len=members.length; i<len ; i++ ) {
+        htmlText+=
+            "<li class='row'>"+
+              "<div class='col-xs-3 col-md-3 '>"+
+                "<img src='"+members[i].u_thumbnail+"' class='img-responsive  size-60'>"+
+              "</div>"+
+              "<div class='col-xs-7 col-md-7 '>"+
+                "<h4>"+members[i].u_name+"<small><p class='text-right'></p></small></h4>"+
+                "<small>"+members[i].m_intro+"</small>"+
+              "</div>" +
+              "<div class='col-xs-2 col-md-2 '>";
+        if (members[i].m_is_sg_manager==1) {
+          htmlText +=
+                "<input type='radio' name='m_is_sg_manager' value='"+members[i].m_id+"' checked required> " +
+                "<p class='pull-right glyphicon glyphicon-flag'></p>";
+          
+        } else {
+          htmlText += 
+                "<input type='radio' name='m_is_sg_manager' value='"+members[i].m_id+"' required>" ;
+        }
+        htmlText +=          
+              "</div>" +
+            "</li>";
+      }//end of for
+      
+      htmlText+=
+          "</ul>" +
+        "</div>" +
+        "<div class='col-md-6 col-xs-12'>" +
+        "<form action='/smallgroup/"+smallgroup.sg_id+"?g_id="+ group.g_id+ "' onsubmit='return validateUpdateSmallGrouprPageForParent()' method='post'>"+
+          "<input type='hidden' id='sg_depth' name='sg_depth'>" +
+          "<ul class='list-unstyled'>" +
+            "<li><h4><p class='text-left'>부모 소그룹</p></h4><hr/></li>" ;
+  
+    for (var i=0, len=smallgroups.length; i<len; i++) {
+      if(i==index) continue;  //자기 소그룹은 표시하지 않기.
+      htmlText+=
+            "<li class='row'>"+
+              "<div class='col-xs-3 col-md-2 '>"+
+                "<img src='"+smallgroups[i].sg_thumbnail+"' class='img-responsive  size-60'>"+
+              "</div>"+
+              "<div class='col-xs-7 col-md-7 '>"+
+                "<h4>"+smallgroups[i].sg_name+"<small><p class='text-right'></p></small></h4>"+
+                "<small>"+smallgroups[i].sg_intro+"</small>"+
+              "</div>" +
+              "<div class='col-xs-2 col-md-3 '>" +
+                "<input type='hidden' id='sg_depth"+smallgroups[i].sg_id+"' value='"+smallgroups[i].sg_depth+"'>" ;
+      if (smallgroup.sg_parent_sg_id==smallgroups[i].sg_id) {
+        htmlText += 
+                "<input type='radio' name='sg_parent_sg_id' value='"+smallgroups[i].sg_id+"' checked required>" ;
+      } else {
+        htmlText += 
+                "<input type='radio' name='sg_parent_sg_id' value='"+smallgroups[i].sg_id+"' required>" ;
+      }
+      htmlText +=  
+              "</div>" +
+            "</li>";
+    }
+
+    htmlText+=
+            "<br/><button type='submit' class='btn btn-primary pull-right'><span class='fa fa-upload'></span> + 부모 소그룹 설정 수정하기 </button>" +
+          "</ul>" +
+        "</form>" +
+        "</div>" +
+      "</div>" + 
+    "</div>";
+    
+    modalEl.html(htmlText);
+    $('#openUpdateSmallGroupPageModal').modal('show');
+}
+
+
+
+
 function validateAcceptJoinRequestMemberPage () {
   var sg_id = $('input:radio[name="sg_id"]:checked').val();
   if(!sg_id) {
@@ -450,14 +360,17 @@ var drawGroupManage = function () {
     htmlText+=
       "<div class='row'>" +
         "<div class='col-md-12 col-xs-12'>" +
-          "<br/><br/><h4><img id='group-image' class='img-circle size-70 ' src='"+ group.g_thumbnail +"'/> "+group.g_name+"</h4><hr/>" +
+          "<br/><br/>" +
+          "<a href='/group/"+group.g_id+"'>" +
+            "<h4><img id='group-image' class='img-circle size-70 ' src='"+ group.g_thumbnail +"'/> "+group.g_name+"</h4><hr/>" +
+      		"</a>" +
         "</div>" +
       "</div>" +
       "<div class='row'>" +
         "<div class='col-md-6 col-xs-12'>" +
           "<br/><h4>" +
             "<p class='text-left'>소그룹 리스트</p>" +
-            "<a class='btn btn-primary pull-right' onclick='openMakeSmallGrouprPage()'>+ 소그룹 생성 </a></h4>" +
+            "<a class='btn btn-primary pull-right' onclick='openMakeSmallGroupPage()'>+ 소그룹 생성 </a></h4>" +
           "<hr/>"+
           "<ul class='list-unstyled'>";
     for (var i=0, len=smallgroups.length; i<len; i++) {
@@ -472,8 +385,7 @@ var drawGroupManage = function () {
               "</div>" +
               "<div class='col-xs-4 col-md-3 '>" +
                 "<a class='btn btn-danger pull-right' href=''>삭제</a> " +
-                "<a class='btn btn-warning pull-right' href=''>수정</a> " +
-                
+                "<a class='btn btn-warning pull-right' onclick='openUpdateSmallGroupPage("+i+")'>수정</a> " +
               "</div>" +
             "</li>";
     }
@@ -586,8 +498,8 @@ function SmallgroupNode(smallgroup){
   this.sg_thumbnail = smallgroup.sg_thumbnail;
   this.sg_depth = smallgroup.sg_depth;
   this.sg_parent_sg_id = smallgroup.sg_parent_sg_id;
-  this.sg_first_child_sg_id = smallgroup.sg_first_child_sg_id;
-  this.sg_next_sibling_sg_id = smallgroup.sg_next_sibling_sg_id;
+//  this.sg_first_child_sg_id = smallgroup.sg_first_child_sg_id;
+//  this.sg_next_sibling_sg_id = smallgroup.sg_next_sibling_sg_id;
   this.members = smallgroup.members; 
   
   this.x;

@@ -29,7 +29,7 @@ $( document ).ready(function () {
   g_id
   g_name
   g_thumbnail
-  g_intro
+  g_intro 
   g_count
   smallgroups : 
   [
@@ -41,8 +41,6 @@ $( document ).ready(function () {
       sg_thumbnail:,
       sg_master_manager_m_id:;
       sg_parent_sg_id:,
-      sg_first_child_sg_id:,
-      sg_next_sibling_sg_id:,
       
       members:    //m_isapproved가 1인 member 데이터만
       [ {   
@@ -143,7 +141,7 @@ var drawSmallgroups = function(){
     iconList.html(iconListHTMLString);
     $('body').addClass('show-menu');
     isOpen = true;  
-  }
+  };
 
   // smallgroups for-loop
   for (var smallgroupIndex=0, len=smallgroups.length; smallgroupIndex<len; smallgroupIndex++) {
@@ -337,7 +335,8 @@ var buildingTreeSmallgroup = function() {
     
     //set y position 
     var groupDepth = smallgroups[smallgroupslength-1].sg_depth;
-    smallgroupNode.y= (dw_common.screenHeight-dw_common.topNavigationBarHeight-30)/(groupDepth+1)*smallgroupNode.sg_depth + dw_common.topNavigationBarHeight*1.5;
+    smallgroupNode.y= (dw_common.screenHeight-dw_common.topNavigationBarHeight-30)/(groupDepth+1)
+                      *smallgroupNode.sg_depth + dw_common.topNavigationBarHeight*1.5;
 
     //set x position
     var sameDepthNodesCount=0;
@@ -352,18 +351,19 @@ var buildingTreeSmallgroup = function() {
         break;
       }
     }
-    smallgroupNode.x = dw_common.screenWidth/(sameDepthNodesCount)*(currentNodeIndex + 0.5)-dw_common.thumbnailSize60/2;
+    smallgroupNode.x = dw_common.screenWidth/(sameDepthNodesCount)*(currentNodeIndex + 0.5)
+                      -dw_common.thumbnailSize60/2;
     
     if(!smallgroupNode.sg_thumbnail){
       smallgroupNode.sg_thumbnail = "/img/sg_img.jpg";
     }
-    
     this.smallgroups[index] = smallgroupNode;
   }
 
   for (var i=0; i<smallgroupslength-1; i++) {
     //set next sibling
-    if (smallgroups[i].sg_depth === smallgroups[i+1].sg_depth) {  
+    if (smallgroups[i].sg_depth === smallgroups[i+1].sg_depth &&
+        smallgroups[i].sg_parent_sg_id === smallgroups[i+1].sg_parent_sg_id) {  
       smallgroups[i].nextSiblingNode = smallgroups[i+1];
     }                                                
 
@@ -374,9 +374,7 @@ var buildingTreeSmallgroup = function() {
         break;
       }
     }  
-    
   }
-
   return smallgroups;
 };
 
@@ -389,11 +387,9 @@ function Group(group) {
   this.g_thumbnail = group.g_thumbnail; 
   this.g_intro = group.g_intro; 
   this.g_count = group.g_count; 
-  
   this.join_request_members = group.join_request_members;
-  
   this.smallgroups = group.smallgroups;
-  
+  // 메소드.
   this.buildingTreeSmallgroup = buildingTreeSmallgroup; 
   this.drawSmallgroups = drawSmallgroups;
   this.drawGroup = drawGroup;
@@ -409,16 +405,13 @@ function SmallgroupNode(smallgroup){
   this.sg_thumbnail = smallgroup.sg_thumbnail;
   this.sg_depth = smallgroup.sg_depth;
   this.sg_parent_sg_id = smallgroup.sg_parent_sg_id;
-  this.sg_first_child_sg_id = smallgroup.sg_first_child_sg_id;
-  this.sg_next_sibling_sg_id = smallgroup.sg_next_sibling_sg_id;
   this.members = smallgroup.members; 
-  
   this.x;
   this.y;
   this.thumbImg;
   this.firstChildNode;
   this.nextSiblingNode;
-  
+  // 메소드.
   this.setMembersNodes = function(){
     for (var index=0, len=this.members.length; index<len; index++) {
       this.members[index] = new MemberNode(this.members[index]);

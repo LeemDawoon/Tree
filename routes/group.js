@@ -37,7 +37,7 @@ var makeGroup = function(req, res, next){
 		req.imageDir = treePath.uploadPath.forest;
 		processS3UploadFiles(req, function(err, result) {
 			var g_name=result.formFields.g_name;
-			var g_intro = result.formFields.g_intro	
+			var g_intro = result.formFields.g_intro;	
 			var my_u_id = req.user.u_id;
 			process.nextTick(function() {
 				global.connectionPool.getConnection(function(err, connection) {
@@ -220,16 +220,14 @@ var getGroup = function (req, res, next) {
                   sg_name:,
                   sg_master_manager_m_id,
                   sg_parent_sg_id:,
-                  sg_first_child_sg_id:,
-                  sg_next_sbling_sg_id:,
 
            * SQL 설명: 특정 숲의 소그룹 정보
            **/
           var getSmallgroupDataSql = 
-            "SELECT sg_id, sg_depth, sg_name, sg_intro, sg_thumbnail, sg_parent_sg_id, sg_first_child_sg_id, sg_next_sibling_sg_id "+
+            "SELECT sg_id, sg_depth, sg_name, sg_intro, sg_thumbnail, sg_parent_sg_id "+
             "FROM small_group "+ 
             "WHERE g_id=? "+
-            "ORDER BY sg_depth, sg_name";
+            "ORDER BY sg_depth, sg_parent_sg_id, sg_id";
           connection.query(getSmallgroupDataSql, [g_id], function(err, rows, fields){
                 if (err) {
                     global.logger.error("[getGroup] - getSmallgroupDataSql ==>", err);
@@ -345,14 +343,7 @@ var updateGroup = function (req, res, next) {
                 callback(err);
               } else {
                 if (rows[0].g_thumbnail) {
-                  if (req.user.u_fb_id) {
-                    // photoPaths.push(path.join(__dirname, pixxPath.uploadPath.profile, path.basename(rows[0].picture)));
-                    // photoPaths.push(path.join(__dirname, pixxPath.uploadPath.profileThumbnail, path.basename(rows[0].picture)));
-                  } else {
-                    // photoPaths.push(path.join(__dirname, pixxPath.uploadPath.profile, rows[0].picture));
-                    // photoPaths.push(path.join(__dirname, pixxPath.uploadPath.profileThumbnail, rows[0].picture));
                     oldPhotoPath = rows[0].g_thumbnail;
-                  }
                 }
                  global.logger.debug("updateGroup photo getOldGroupPhotoPath");
                 callback(null);
@@ -493,13 +484,11 @@ var getGroupManage = function (req, res, next) {
                   sg_name:,
                   sg_master_manager_m_id,
                   sg_parent_sg_id:,
-                  sg_first_child_sg_id:,
-                  sg_next_sbling_sg_id:,
 
            * SQL 설명: 특정 숲의 소그룹 정보
            **/
           var getSmallgroupDataSql = 
-            "SELECT sg_id, sg_depth, sg_name, sg_intro, sg_thumbnail, sg_parent_sg_id, sg_first_child_sg_id, sg_next_sibling_sg_id "+
+            "SELECT sg_id, sg_depth, sg_name, sg_intro, sg_thumbnail, sg_parent_sg_id "+
             "FROM small_group "+ 
             "WHERE g_id=? "+
             "ORDER BY sg_depth, sg_name";
@@ -537,7 +526,7 @@ var getGroupManage = function (req, res, next) {
                     "(CASE m_is_birth_open WHEN 1 THEN u_birth ELSE null END) u_birth, "+ 
                     "(CASE m_is_fblink_open WHEN 1 THEN CONCAT('http://www.facebook.com/',u_fb_id) ELSE null END) u_fb_link "+ 
                     "FROM user u JOIN member m ON(u.u_id = m.u_id)  "+
-                    "WHERE sg_id=? AND m_is_sg_manager=1 ";
+                    "WHERE sg_id=?";
                   connection.query(memberDataSQL, [smallgroup.sg_id], function(err, rows, fields){
                     if (err) {
                       global.logger.error("[getGroup] - membershipDataSql ==>", err);
